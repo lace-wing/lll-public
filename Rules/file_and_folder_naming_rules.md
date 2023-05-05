@@ -8,3 +8,7 @@
 4. Use `-` as `/` in date-times
 
 ## Folders
+
+1. Only include English and numbers as possible
+2. Pascal case merged with `_`
+3. Use `-` as `/` in date-times
