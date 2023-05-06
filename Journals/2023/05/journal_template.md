@@ -6,7 +6,7 @@
 Lacewing  
 YYYY/MM/DD
 
-[Music](link)
+<!--- [Music](link) --->
 
 > Quote
 
