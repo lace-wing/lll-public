@@ -3,7 +3,7 @@
 ```md
 # Title
 
-Lacewing
+Lacewing  
 YYYY/MM/DD
 
 [Music](link)
@@ -19,7 +19,7 @@ Body
 
 # Today's Title
 
-Lacewing
+Lacewing  
 2023/05/06
 
 [Today's Music](Link to a music)
