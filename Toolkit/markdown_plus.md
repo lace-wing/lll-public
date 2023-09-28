@@ -1,186 +1,226 @@
+---
+title: Markdown+
+author: Lacewing
+description: An introduction to Markdown and its toolkit
+
+paginate: true
+transition: wipe
+theme: uncover
+---
+<!-- _paginate: false -->
+
 # Markdown+
 
-**Markdown / MD** 是一款用于格式化文本的标记语言，因为简单易上手且扩展性强受到不少人青睐。近年来 MD 的热度不断攀升，流行的笔记产品，如 Obsidian 和 Notion 都使用 MD 作为其默认语言（不是文化中的语言）。本文将介绍基础 MD 使用和一些扩展功能。
+## 够简单，够实用
 
-**标记语言**就是在文本中做标记，让程序识别并进行相应操作的语言。举个例子，`**文本**` 在 MD 中就是将“文本”加粗的意思，看起来像这样：**文本**。
+Markdown 简介及相关扩展工具推荐
+
+---
+
+## Markdown
+
+**Markdown / MD** 是一款用于*格式化文本*的[标记语言](https://zh.wikipedia.org/wiki/置标语言)
+
+```md
+**Markdown / MD** 是一款用于*格式化文本*的[标记语言](https://zh.wikipedia.org/wiki/置标语言)
+```
+
+---
 
 ## 为什么用 Markdown？
 
-- 使用简单，即刻上手
-- 照顾格式，比 TXT 易读
-- 专注内容，没有 MS Word 那样令人眼花缭乱的功能选项
-- 一般用于（学习）笔记、网络文章和其他需要转为 HTML 的场合
+- 容易阅读，转换灵活
+- 方便编辑，专注内容
+- 生态良好，几乎免费
 
-## 目录
+---
 
-- [用途](#用途)
-- [用法](#用法)
-- [工具箱](#工具箱)
-- [延伸](#延伸)
+### 阅读 Markdown
 
-## 用途
-
-尽管用途很多，MD 并非万能。了解其用途，搭配合适的使用场景才能事半功倍。
-
-**MD 适用于简单的文本格式化**：
-### 标题 `###标题`
-_斜体_ `_斜体_`  
-**粗体** `**粗体**`  
-> 引句 `> 引句`  
-[链接](https://www.markdownguide.org) `[链接](https://www.markdownguide.org)`
-````md
+```md
+# 井号作为标题
+Markdown 使用的标记不太影响阅读，甚至还能辅助阅读。  
+*星号*指示**重点**，
+- 短横杠则是列表中的一条
+- 反引号标记`代码`
+1. 数字给列表排序
+2. [文本](www.可以嵌入链接.com)
 ```
-代码块
-```
-````
-等它都能简单地实现。
-
-用它来做笔记，写文章，敲几下键盘就能加上格式，是很不错的工具。
-
-**MD 使用简单直白的文本格式**。
-
-Office 系的文件，如 MS Word 的 `.docx`，将格式储存在 XML 等文件中并打包。用户虽然可以用文本编辑器打开这些文件，却几乎无法编辑，只能用 Office 软件编辑。富文本格式的文件，虽然也是纯文本，但可读性较差，难以理解。
-
-MD 则使用简洁明了的语法，以纯文本储存，方便编辑与转发。
-
-**MD 多端兼容**，只要渲染规则相似，无论是什么系统和编辑器，渲染的结果都一样，也不会出现格式崩坏。
-
-**基础 MD 即开即用**，无需安装特定软件、引擎或引用库，当然也无需付费。
-
-**MD 可扩展**，有许多基于 MD 使用的高级格式化工具。
 
 ---
 
-综合以上特点，MD 适用于没有高级格式要求的写作，或利用其他工具快速制作美观的排版。
+### 编辑 Markdown
+
+`.docx` 需要 Office  
+需要在工具面板和文本间切换  
+还有兼容问题（MS Word、Pages、LibreOffice……）
+`.rtf` 纯文本下难以编写
+图形编辑器也需要使用工具面板  
+`.md` 可用任何编辑器，纯文本编写
 
 ---
 
-**MD 不是高级排版工具**，不能完成复杂的排版与格式化操作。切换字体、插入形状、填充颜色等要求难以实现（虽然可以用 HTML，CSS，JS 等辅助实现，但已经不属于 MD 的范畴）。
+## 使用场景
+
+因其易编辑、效果好、导出方便的特性
+Markdown 适用于多种生活场景
 
 ---
 
-由此，MD 不能作为正式排版语言使用，无法取代 Word 类工具。
+### 内容创作
+
+只需打字即可完成内容和排版，
+无需点击功能图标或学习快捷键
+适合专注内容的普通写作
 
 ---
 
-## 用法
+### 笔记
 
-基础 MD 的用法非常简单，你可以跟着下面的步骤做。
+编写简便，附加排版，无需额外配置
+纯文本，体积小，何时何地何设备都可编辑
+适合快速且精致的笔记和备忘录
 
-### 创建
+---
 
-1. 新建一个文件夹作为我们的 MD 试验场。
+### 网络博客
 
-2. 在文件夹中新建一个文本文档，将其后缀 `.txt` 改为 `.md`（如果你看不见 `.txt` 之类的文件扩展名，请在文件浏览器的显示设置中勾选“显示文件扩展名”的选项）
+除了内容创作上的便利，
+Markdown 原生支持 HTML 转换，还可导出为多种格式
+适合网络博客的写作
 
-### 编辑
+---
 
-1. 用任意文本编辑器（记事本或文本编辑都可）打开刚刚的 `.md` 文件
+### Markdown 主要痛点
 
-2. 输入没有标记，没有格式的文本
+- 几乎无法完成高级排版任务
 
-3. 在主标题前面，那一行的开头，加上 `# `，注意要在井号和标题间留一空格（`# 主标题`）
+    论文、书籍之类还是要交给
+    Word、LaTex、Typst 等专业工具
 
-4. 相似地，在二级标题前面加上 `## `（`## 二级标题`）
+- 需要浏览器或专门软件渲染
 
-5. 以此类推，每一级标题前加对应数量的井号，直到六级
+    不同工具的渲染结果可能不同
 
-6. 在需要强调的文本前后各加一个 `_`，中间的文本会以斜体显示（`_斜体_`）
+- 种类繁多，额外语法可能搞混
 
-7. 在需要突出显示的文本前后各加一个 `**`，中间的文本会以粗体显示（`**粗体**`）
+    原版、GFM、Pandoc、Julia……
 
-8. 既要斜体又要粗体？都加上就好了（`_**斜粗**_`）
+---
 
-9. 如果要显示下划线、星号一类的字符，在它们前面加上一个反斜杠 `\` 即可（`\_ \*`）
+## Markdown 工具箱
 
-上面就是 MD 的基础语法了，更详细的教程和更多操作参见[官中教程](https://markdown.com.cn)和[工具箱](#工具箱)里提到的文档。
+编辑、渲染、导出、转换、扩展……
 
-### 查看
+本文不会介绍
+需要用户使用 HTML、CSS、JS 等的高级操作，
+因为它们偏离 Markdown 设计较远
 
-完成上面的步骤后，我们可以将 MD 转为 PDF、PNG、HTML 等便于浏览的格式。你可以用 [Cloud Convert](https://cloudconvert.com/md-to-pdf) 在线将 MD 转为 PDF，也可以用[工具箱](#工具箱)里提到的工具渲染或转换。
+---
 
-## 工具箱
-
-### 教程和文档
+### 教程 & 文档
 
 - [官中教程](https://markdown.com.cn)
 - [英文教程](https://www.markdownguide.org)
-- [教程 by 一个普通程序员的成长之路](https://zhuanlan.zhihu.com/p/261016461)
-- [系列教程 by 远怀学堂](https://zhuanlan.zhihu.com/p/110205321)
-- [原作者介绍](https://daringfireball.net/projects/markdown/)
+- [知乎教程 by 一个普通程序员的成长之路](https://zhuanlan.zhihu.com/p/261016461)
+- [知乎系列教程 by 远怀学堂](https://zhuanlan.zhihu.com/p/110205321)
+- 各个工具的文档
+- ……
 
-### 编辑器和整合软件
+---
 
-- [MarkText](https://github.com/marktext/marktext/blob/develop/docs/i18n/zh_cn.md#readme)
+### 编辑器 & 笔记软件
 
-    - 开源免费（MIT）
-    - 易上手，自带汉化
-    - 支持 Windows、macOS 和 Linux
-    - 支持所见即所得
-    - 可导出为 PDF 和 HTML
-    - 支持 LaTex 数学和 Mermaid 图表
-    - 支持自定义 CSS 主题
-    - 无插件
+Markdown 编辑器除了基础的编辑，
+大都有语法高亮、实时预览、转换导出等功能
+有些还整合了笔记管理与同步
 
-- [Visual Studio Code (VSC)](https://code.visualstudio.com/download)
+---
 
-    - 开源免费（MIT）
-    - 易上手，有汉化插件，插件功能强大
-    - 支持 Windows、macOS 和 Linux，有网页版
-    - 自带一定 MD 支持，也可以使用 MD 插件实现各类功能
+#### [MarkText](https://github.com/marktext/marktext/blob/develop/docs/i18n/zh_cn.md#readme)
 
-- [Neovim](https://github.com/neovim/neovim) / [Vim](https://github.com/vim/vim)
+- 开源免费（MIT）
+- 易上手
+- 支持 Windows、macOS 和 Linux
+- 支持所见即所得
+- 可导出为 PDF 和 HTML
+- 支持 LaTex 数学，Mermaid 图表和更多扩展
+- 支持自定义 CSS 主题
+- 无插件
 
-    - 开源免费（Apache 2.0 / VIM ）
-    - 较难上手，需配置
-    - 支持 Windows、macOS 和 Linux，移动端则较难使用
-    - 支持高度自定义
-    - 插件丰富，功能强大
+---
 
-- [Typora](https://typora.io)
+#### [Visual Studio Code (VSC)](https://code.visualstudio.com/download)
 
-    - 付费（买断制，15天试用）
-    - 易上手，简约美观
-    - 支持 Windows、macOS 和 Linux，且其 macOS 版本非 Electron 框架
-    - 支持自定义 CSS 主题
-    - 无插件
+- 开源免费（MIT）
+- 易上手，有汉化插件，插件功能强大
+- 支持 Windows、macOS 和 Linux，有网页版
+- 自带一定 MD 支持，也可以使用 MD 插件实现各类功能
 
-- [Obsidian](https://obsidian.md)，笔记软件
+---
 
-    - 开源，免费+增值（Freemium），增值部分主要为商用证书和云存储服务
-    - 易上手，有双向链接和独特的关系图功能
-    - 支持 Windows、macOS、Linux、iOS 和 安卓
-    - 支持所见即所得
-    - 支持插件
-    - 可导出为 PDF 等格式
-    - 使用 `.md` 而非独有格式储存文件，默认为本地存储
+#### [Neovim](https://github.com/neovim/neovim) / [Vim](https://github.com/vim/vim)
 
-- [Joplin](https://joplinapp.org/cn/)，笔记软件
+- 开源免费（Apache 2.0 / VIM ）
+- 较难上手，需配置
+- 支持 Windows、macOS 和 Linux，移动端则较难使用
+- 支持高度自定义
+- 插件丰富，功能强大
 
-    - 开源免费（AGPL-3.0）
-    - 易上手，内置一定的云存储支持（OneDrive 等）
-    - 支持 Windows、macOS、Linux、iOS 和 安卓
-    - 支持所见即所得
-    - 支持插件
-    - 使用独有文件格式，但可导出为 MD、PDF 等格式
+---
 
-### Markdown+
+#### [Typora](https://typora.io)
 
-除了快速格式化文章，MD 还可以扩展到更多领域。
+- 付费（买断制，15天试用）
+- 易上手，简约精致
+- 支持 Windows、macOS 和 Linux
+- 支持所见即所得，LaTex 数学，Mermaid 图表和更多扩展
+- 支持自定义 CSS 主题
+- 无插件
 
-#### 幻灯片 / 演示文稿
+---
 
-因其易编写的特性，也有使用 MD 快速制作幻灯片的工具。
+#### [Obsidian](https://obsidian.md)（笔记软件）
 
-- [Marp](https://marp.app)
+- 开源，免费+增值（Freemium），增值部分主要为商用证书和云存储服务
+- 易上手，有双向链接和独特的关系图功能
+- 支持 Windows、macOS、Linux、iOS 和 安卓
+- 支持所见即所得，LaTex 数学和 Callout
+- 支持插件
+- 可导出为 PDF 等格式
+- 使用 `.md` 而非独有格式储存文件，默认为本地存储
 
-    - 开源免费（MIT）
-    - 易上手，纯 MD 和少量 HTML（注释）即可
-    - 支持 Windows、macOS、Linux，有 CLI，VSC 插件和 API
-    - 需要 Node.js
-    - 可导出为 PDF、HTML、PNG、JEPG 和 PPTX
-    - 支持自定义 CSS 主题，实时预览和转场动画（需要 Chrome 内核浏览器）
+---
 
-    ![Marp 演示](assets/marp-ah.gif)
+#### [Joplin](https://joplinapp.org/cn/)（笔记软件）
 
-## 延伸
+- 开源免费（AGPL-3.0）
+- 易上手，内置一定的云存储支持（OneDrive 等）
+- 支持 Windows、macOS、Linux、iOS 和 安卓
+- 支持所见即所得，LaTex 数学和 Mermaid 图表
+- 支持插件
+- 默认本地存储，使用独有文件格式，但可导出为 MD、PDF 等格式
+
+---
+
+### 幻灯片 / 演示文稿
+
+Markdown 也可用于创建美观的幻灯片
+相较于 PPT 等 Office 工具，
+Markdown 幻灯片通常功能较少，但制作简单
+
+---
+
+#### [Marp](https://marp.app)
+
+- 开源免费（MIT）
+- 易上手，纯 MD 和少量 HTML（注释）即可
+- 支持 Windows、macOS、Linux，有 CLI 和 VSC 插件
+- 需要 Node.js
+- 可导出为 PDF、HTML、PNG、JEPG 和 PPTX
+- 支持自定义 CSS 主题，实时预览和转场动画（需要 Chrome 内核浏览器）
+
+---
+
+![bg](assets/marp-ah.gif)
+
