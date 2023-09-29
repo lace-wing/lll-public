@@ -150,6 +150,17 @@ Markdown 编辑器除了基础的编辑，
 
 ---
 
+#### [Typora](https://typora.io)
+
+- 付费（买断制，15天试用）
+- 易上手，简约精致
+- 支持 Windows、macOS 和 Linux
+- 支持所见即所得，LaTex 数学，Mermaid 图表和更多扩展
+- 支持自定义 CSS 主题
+- 无插件
+
+---
+
 #### [Visual Studio Code (VSC)](https://code.visualstudio.com/download)
 
 - 开源免费（MIT）
@@ -169,22 +180,11 @@ Markdown 编辑器除了基础的编辑，
 
 ---
 
-#### [Typora](https://typora.io)
-
-- 付费（买断制，15天试用）
-- 易上手，简约精致
-- 支持 Windows、macOS 和 Linux
-- 支持所见即所得，LaTex 数学，Mermaid 图表和更多扩展
-- 支持自定义 CSS 主题
-- 无插件
-
----
-
 #### [Obsidian](https://obsidian.md)（笔记软件）
 
 - 开源，免费+增值（Freemium），增值部分主要为商用证书和云存储服务
 - 易上手，有双向链接和独特的关系图功能
-- 支持 Windows、macOS、Linux、iOS 和 安卓
+- 支持 Windows、macOS、Linux、iOS 和安卓
 - 支持所见即所得，LaTex 数学和 Callout
 - 支持插件
 - 可导出为 PDF 等格式
@@ -196,10 +196,19 @@ Markdown 编辑器除了基础的编辑，
 
 - 开源免费（AGPL-3.0）
 - 易上手，内置一定的云存储支持（OneDrive 等）
-- 支持 Windows、macOS、Linux、iOS 和 安卓
+- 支持 Windows、macOS、Linux、iOS 和安卓
 - 支持所见即所得，LaTex 数学和 Mermaid 图表
 - 支持插件
 - 默认本地存储，使用独有文件格式，但可导出为 MD、PDF 等格式
+
+---
+
+#### [Notion](https://www.notion.so)（笔记软件）
+
+- 免费+增值（Freemium）
+- 易上手，Markdown 以外的功能多
+- 支持 Windows、macOS、Linux、iOS 和安卓，有网页版
+- 主要为团队管理和商业项目服务
 
 ---
 
@@ -224,3 +233,20 @@ Markdown 幻灯片通常功能较少，但制作简单
 
 ![bg](assets/marp-ah.gif)
 
+---
+
+<!-- _paginate: false -->
+
+## 延伸阅读
+
+- ReStructuredText
+    
+    另一门简单的文本格式化语言
+
+- LaTex
+
+    有数十年历史的专业排版语言
+
+- Typst
+
+    新兴的现代排版语言
