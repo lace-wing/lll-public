@@ -6,8 +6,10 @@ description: An introduction to Markdown and its toolkit
 paginate: true
 transition: wipe
 theme: uncover
+header: Lacewing's Markdown Toolkit
 ---
 <!-- _paginate: false -->
+<!-- _header: '' -->
 
 # Markdown+
 
@@ -29,9 +31,9 @@ Markdown 简介及相关扩展工具推荐
 
 ## 为什么用 Markdown？
 
-- 容易阅读，转换灵活
-- 方便编辑，专注内容
-- 生态良好，几乎免费
+- 容易阅读，图文格式转换灵活
+- 方便编辑，兼顾写作和轻排版
+- 生态良好，免费解决方案丰富
 
 ---
 
@@ -51,12 +53,9 @@ Markdown 使用的标记不太影响阅读，甚至还能辅助阅读。
 
 ### 编辑 Markdown
 
-`.docx` 需要 Office  
-需要在工具面板和文本间切换  
-还有兼容问题（MS Word、Pages、LibreOffice……）
-`.rtf` 纯文本下难以编写
-图形编辑器也需要使用工具面板  
-`.md` 可用任何编辑器，纯文本编写
+`.md` 可用任何文本编辑器编辑，并以纯文本形式编写
+
+![w:550px](assets/textedit-md.png)
 
 ---
 
@@ -64,6 +63,8 @@ Markdown 使用的标记不太影响阅读，甚至还能辅助阅读。
 
 因其易编辑、效果好、导出方便的特性
 Markdown 适用于多种生活场景
+
+<!-- _footer: Markdown 最初是为网页写作设计的 -->
 
 ---
 
@@ -81,6 +82,8 @@ Markdown 适用于多种生活场景
 纯文本，体积小，何时何地何设备都可编辑
 适合快速且精致的笔记和备忘录
 
+<!-- _footer: 做科学类笔记时还得请出 LaTex block -->
+
 ---
 
 ### 网络博客
@@ -89,22 +92,17 @@ Markdown 适用于多种生活场景
 Markdown 原生支持 HTML 转换，还可导出为多种格式
 适合网络博客的写作
 
+<!-- _footer: 毕竟是为此而做的 -->
+
 ---
 
-### Markdown 主要痛点
+### 为什么不用 Markdown
 
-- 几乎无法完成高级排版任务
+- 灵活性受限（缩放、图表……）
+- 无高级排版（学术写作、书籍……）
+- 种类繁多（GFM、Pandoc、Julia……）
 
-    论文、书籍之类还是要交给
-    Word、LaTex、Typst 等专业工具
-
-- 需要浏览器或专门软件渲染
-
-    不同工具的渲染结果可能不同
-
-- 种类繁多，额外语法可能搞混
-
-    原版、GFM、Pandoc、Julia……
+<!-- _footer: 能力是有限的 -->
 
 ---
 
@@ -113,8 +111,10 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 编辑、渲染、导出、转换、扩展……
 
 本文不会介绍
-需要用户使用 HTML、CSS、JS 等的高级操作，
+需要用户使用 HTML、JS 等的高级操作，
 因为它们偏离 Markdown 设计较远
+
+<!-- _footer: 因为我也不太会 -->
 
 ---
 
@@ -127,6 +127,8 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 - 各个工具的文档
 - ……
 
+<!-- _footer: search the friendly web -->
+
 ---
 
 ### 编辑器 & 笔记软件
@@ -134,6 +136,8 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 Markdown 编辑器除了基础的编辑，
 大都有语法高亮、实时预览、转换导出等功能
 有些还整合了笔记管理与同步
+
+<!-- _footer: 不知道谁带火了 MD 笔记 -->
 
 ---
 
@@ -168,6 +172,8 @@ Markdown 编辑器除了基础的编辑，
 - 支持 Windows、macOS 和 Linux，有网页版
 - 自带一定 MD 支持，也可以使用 MD 插件实现各类功能
 
+<!-- _footer: VSC，年轻人的第一款文本浏览器 -->
+
 ---
 
 #### [Neovim](https://github.com/neovim/neovim) / [Vim](https://github.com/vim/vim)
@@ -177,6 +183,8 @@ Markdown 编辑器除了基础的编辑，
 - 支持 Windows、macOS 和 Linux，移动端则较难使用
 - 支持高度自定义
 - 插件丰富，功能强大
+
+<!-- _footer: 啊？ -->
 
 ---
 
@@ -189,6 +197,8 @@ Markdown 编辑器除了基础的编辑，
 - 支持插件
 - 可导出为 PDF 等格式
 - 使用 `.md` 而非独有格式储存文件，默认为本地存储
+
+<!-- _footer: Vimwiki GUI Pro -->
 
 ---
 
@@ -229,24 +239,85 @@ Markdown 幻灯片通常功能较少，但制作简单
 - 可导出为 PDF、HTML、PNG、JEPG 和 PPTX
 - 支持自定义 CSS 主题，实时预览和转场动画（需要 Chrome 内核浏览器）
 
+<!-- _footer: 这份幻灯片……？ -->
+
 ---
+
+<!-- _header: '' -->
 
 ![bg](assets/marp-ah.gif)
 
 ---
 
-<!-- _paginate: false -->
+### 转换工具
 
-## 延伸阅读
+有时需要将 Markdown 转为其他格式，
+比如 PDF 方便阅读，亦或者 LaTex 继续进行排版
 
-- ReStructuredText
-    
-    另一门简单的文本格式化语言
+---
 
-- LaTex
+#### 在线转换工具
 
-    有数十年历史的专业排版语言
+- 需要网络
+- 数据不一定安全
+- 支持多种格式
+- 操作比较省心
 
-- Typst
+---
 
-    新兴的现代排版语言
+#### Pandoc
+
+- 较难上手
+- 功能强大，支持非常多种格式
+- 本地运行，无需网络
+- 有网页版
+
+<!-- _footer: _Interview With Pandoc Enthusiast_ -->
+
+---
+
+### PDF 转换路径
+
+- MD → LaTex → PDF
+
+    简单转换可行，但碰上中文等复杂情况比较麻烦
+
+- MD → HTML → PNG（网页截图）
+
+    对自定义格式支持较好，
+    前提是有合适的 HTML 模版和 CSS
+
+- MD → Typst → PDF
+
+    操作简单，但目前模版较少
+
+---
+
+## 对比
+
+使用场景与 Markdown 有重叠的工具
+
+---
+
+### Markdown & AsciiDoc & reStructuredText
+
+| Markdown | ADOC | rST |
+| - | - | - |
+| 很简单 | 比较简单 | 略微复杂 |
+| 功能有限 | 功能较多 | 功能繁多 |
+
+<!-- _footer: 够简单就行 -->
+
+---
+
+### Markdown & 类 Word & Tex & Typst
+
+| Markdown | Word/ODT/Pages | Tex/LaTex | Typst |
+| - | - | - | - |
+| 随意 | 专门的编辑器 | 随意 | 随意 |
+| 很简单 | 易上手 | 比较复杂 | 易上手 |
+| 功能有限 | 功能繁多 | 十分强大 | 功能繁多/开发中 |
+| 纯文本 | 压缩包 | 纯文本 | 纯文本 |
+
+<!-- _footer: 妈🔪我认得，乳胶太不洒脱 -->
+
