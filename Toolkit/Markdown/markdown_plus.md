@@ -19,6 +19,22 @@ Markdown 简介及相关扩展工具推荐
 
 ---
 
+## 选择 → 练习 → 精通
+
+功能性、实用性、经济性、兼容性
+
+---
+
+### 选择
+
+每个推荐看起来都很好？
+看了许多测评也无法决定？
+↓
+缩减条目，快速找到合适的工具
+练习精进，提高效率
+
+---
+
 ## Markdown
 
 **Markdown / MD** 是一款用于*格式化文本*的[标记语言](https://zh.wikipedia.org/wiki/置标语言)
@@ -32,7 +48,7 @@ Markdown 简介及相关扩展工具推荐
 ## 为什么用 Markdown？
 
 - 容易阅读，图文格式转换灵活
-- 方便编辑，兼顾写作和轻排版
+- 方便编辑，各端效果大体统一
 - 生态良好，免费解决方案丰富
 
 ---
@@ -147,7 +163,6 @@ Markdown 编辑器除了基础的编辑，
 - 易上手
 - 支持 Windows、macOS 和 Linux
 - 支持所见即所得
-- 可导出为 PDF 和 HTML
 - 支持 LaTex 数学，Mermaid 图表和更多扩展
 - 支持自定义 CSS 主题
 - 无插件
@@ -188,6 +203,15 @@ Markdown 编辑器除了基础的编辑，
 
 ---
 
+#### [Simplenote](https://simplenote.com/)（笔记软件）
+
+- 开源免费（GPL 2.0）
+- 易上手，简约设计，有链接功能
+- 支持 Windows、macOS、Linux、iOS 和安卓
+- 默认云存储，强制同步，也支持本地存储
+
+---
+
 #### [Obsidian](https://obsidian.md)（笔记软件）
 
 - 开源，免费+增值（Freemium），增值部分主要为商用证书和云存储服务
@@ -195,8 +219,6 @@ Markdown 编辑器除了基础的编辑，
 - 支持 Windows、macOS、Linux、iOS 和安卓
 - 支持所见即所得，LaTex 数学和 Callout
 - 支持插件
-- 可导出为 PDF 等格式
-- 使用 `.md` 而非独有格式储存文件，默认为本地存储
 
 <!-- _footer: Vimwiki GUI Pro -->
 
@@ -209,7 +231,7 @@ Markdown 编辑器除了基础的编辑，
 - 支持 Windows、macOS、Linux、iOS 和安卓
 - 支持所见即所得，LaTex 数学和 Mermaid 图表
 - 支持插件
-- 默认本地存储，使用独有文件格式，但可导出为 MD、PDF 等格式
+- 使用独有文件格式，但可导出为 MD、PDF 等格式
 
 ---
 
@@ -218,6 +240,7 @@ Markdown 编辑器除了基础的编辑，
 - 免费+增值（Freemium）
 - 易上手，Markdown 以外的功能多
 - 支持 Windows、macOS、Linux、iOS 和安卓，有网页版
+- 默认云存储，可以导出，但导入导出支持差
 - 主要为团队管理和商业项目服务
 
 ---
@@ -276,7 +299,7 @@ Markdown 幻灯片通常功能较少，但制作简单
 
 ---
 
-### PDF 转换路径
+### 转换路径
 
 - MD → LaTex → PDF
 
