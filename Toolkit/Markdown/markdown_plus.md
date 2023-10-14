@@ -1,5 +1,5 @@
 ---
-title: Markdown+
+title: Markdown Toolkit
 author: Lacewing
 description: An introduction to Markdown and its toolkit
 
@@ -11,7 +11,7 @@ header: Lacewing's Markdown Toolkit
 <!-- _paginate: false -->
 <!-- _header: '' -->
 
-# Markdown+
+# Markdown
 
 ## 够简单，够实用
 
@@ -117,8 +117,6 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 - 无高级排版（学术写作、书籍……）
 - 种类繁多（GFM、Pandoc、Julia……）
 
-<!-- _footer: 能力是有限的 -->
-
 ---
 
 ## Markdown 与其他工具对比
@@ -178,8 +176,6 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 | 编辑以外的功能不多 | 笔记的管理与同步 |
 | 主要为电脑端 | 遍布全端 |
 
-选择困难？各看4款风格不同的工具
-
 ---
 
 ### 编辑器
@@ -188,22 +184,10 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 
 ---
 
-#### [MarkText](https://github.com/marktext/marktext/blob/develop/docs/i18n/zh_cn.md#readme)
+#### [MarkText](https://github.com/marktext/marktext/blob/develop/docs/i18n/zh_cn.md#readme) / [Typora](https://typora.io)
 
-- 开源免费（MIT）
+- 开源免费（MIT）/ 付费（买断制，15天试用）
 - 易上手
-- 支持 Windows、macOS 和 Linux
-- 支持所见即所得
-- 支持 LaTex 数学，Mermaid 图表和更多扩展
-- 支持自定义 CSS 主题
-- 无插件
-
----
-
-#### [Typora](https://typora.io)
-
-- 付费（买断制，15天试用）
-- 易上手，简约精致
 - 支持 Windows、macOS 和 Linux
 - 支持所见即所得，LaTex 数学，Mermaid 图表和更多扩展
 - 支持自定义 CSS 主题
@@ -244,7 +228,18 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 - 开源免费（GPL 2.0）
 - 易上手，简约设计，有链接功能
 - 支持 Windows、macOS、Linux、iOS 和安卓
-- 默认云存储，强制同步，也支持本地存储
+- 默认云存储，也支持本地存储
+
+---
+
+#### [Joplin](https://joplinapp.org/cn/)（笔记软件）
+
+- 开源免费（AGPL-3.0）
+- 易上手，内置一定的云存储支持（OneDrive 等）
+- 支持 Windows、macOS、Linux、iOS 和安卓
+- 支持所见即所得，LaTex 数学和 Mermaid 图表
+- 支持插件
+- 使用独有文件格式，但可导出为 MD、PDF 等格式
 
 ---
 
@@ -260,23 +255,13 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 
 ---
 
-#### [Joplin](https://joplinapp.org/cn/)（笔记软件）
-
-- 开源免费（AGPL-3.0）
-- 易上手，内置一定的云存储支持（OneDrive 等）
-- 支持 Windows、macOS、Linux、iOS 和安卓
-- 支持所见即所得，LaTex 数学和 Mermaid 图表
-- 支持插件
-- 使用独有文件格式，但可导出为 MD、PDF 等格式
-
----
-
 #### [Notion](https://www.notion.so)（笔记软件）
 
 - 免费+增值（Freemium）
 - 易上手，Markdown 以外的功能多
 - 支持 Windows、macOS、Linux、iOS 和安卓，有网页版
-- 默认云存储，可以导出，但导入导出支持差
+- 默认云存储，可存本地备份
+- 使用独有格式，可以导出，但导入导出支持差
 - 主要为团队管理和商业项目服务
 
 ---
@@ -299,12 +284,6 @@ Markdown 幻灯片通常功能较少，但制作简单
 - 支持自定义 CSS 主题，实时预览和转场动画（需要 Chrome 内核浏览器）
 
 <!-- _footer: 这份幻灯片……？ -->
-
----
-
-<!-- _header: '' -->
-
-![bg](assets/marp-ah.gif)
 
 ---
 
@@ -341,7 +320,7 @@ Markdown 幻灯片通常功能较少，但制作简单
 
     简单转换可行，但碰上中文等复杂情况比较麻烦
 
-- MD → HTML → PNG（网页截图）
+- MD → HTML → 其他格式
 
     对自定义格式支持较好，
     前提是有合适的 HTML 模版和 CSS
