@@ -1,7 +1,7 @@
 ---
 title: Markdown Toolkit
 author: Lacewing
-description: An introduction to Markdown and its toolkit
+description: An introduction to Markdown and its toolkit.
 
 paginate: true
 transition: wipe
@@ -15,7 +15,7 @@ header: Lacewing's Markdown Toolkit
 
 ## 够简单，够实用
 
-Markdown 简介及相关扩展工具推荐
+Markdown 简介及相关工具推荐
 
 ---
 
@@ -223,7 +223,7 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 使用 Markdown，有笔记功能整合的软件
 
 ---
-#### [Simplenote](https://simplenote.com/)（笔记软件）
+#### [Simplenote](https://simplenote.com/)
 
 - 开源免费（GPL 2.0）
 - 易上手，简约设计，有链接功能
@@ -232,7 +232,7 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 
 ---
 
-#### [Joplin](https://joplinapp.org/cn/)（笔记软件）
+#### [Joplin](https://joplinapp.org/cn/)
 
 - 开源免费（AGPL-3.0）
 - 易上手，内置一定的云存储支持（OneDrive 等）
@@ -243,7 +243,7 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 
 ---
 
-#### [Obsidian](https://obsidian.md)（笔记软件）
+#### [Obsidian](https://obsidian.md)
 
 - 开源，免费+增值（Freemium），增值部分主要为商用证书和云存储服务
 - 易上手，有双向链接和独特的关系图功能
@@ -255,7 +255,7 @@ Markdown 原生支持 HTML 转换，还可导出为多种格式
 
 ---
 
-#### [Notion](https://www.notion.so)（笔记软件）
+#### [Notion](https://www.notion.so)
 
 - 免费+增值（Freemium）
 - 易上手，Markdown 以外的功能多
@@ -279,7 +279,6 @@ Markdown 幻灯片通常功能较少，但制作简单
 - 开源免费（MIT）
 - 易上手，纯 MD 和少量 HTML（注释）即可
 - 支持 Windows、macOS、Linux，有 CLI 和 VSC 插件
-- 需要 Node.js
 - 可导出为 PDF、HTML、PNG、JEPG 和 PPTX
 - 支持自定义 CSS 主题，实时预览和转场动画（需要 Chrome 内核浏览器）
 
