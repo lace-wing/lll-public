@@ -1,2 +1,8 @@
 # macOS ignores
 .DS_Store
+
+# custom
+
+[Ll]ocal-*/
+[Ll]ocal-*
+
