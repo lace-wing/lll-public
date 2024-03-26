@@ -1,11 +1,33 @@
-%title% 轻松打出拼音字符
+%title% 轻松打出拼音字符        
 %author% Lacewing
+
+# 目录
+
+- 为什么要打拼音？
+
+- 教学
+    - macOS
+    - Windows
+
+- 扩展
+    - 音调的附加符号
+    - 写法与排版问题
+
+---
 
 # 观前提示
 
-如无说明，本 *视频* 及其 *脚本* 按下列许可发布：
+如无说明，本 *视频* 及其 *素材* 按 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)许可发布。
 
--> [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+  .oooooo.     .oooooo.      oooooooooo.  oooooo   oooo  
+ d8P'  \`Y8b   d8P'  \`Y8b     \`888'   \`Y8b  \`888.   .8'  
+888          888              888     888   \`888. .8'  
+888          888              888oooo888'    \`888.8'  
+888          888              888    \`88b     \`888'  
+\`88b    ooo  \`88b    ooo      888    .88P      888  
+ \`Y8bood8P'   \`Y8bood8P'     o888bood8P'      o888o  
+
+https://github.com/lace-wing/lll-public/tree/master/media/pinyin
 
 ---
 
@@ -31,11 +53,21 @@
 
 # 打拼音的方法
 
+<br>
 - 上网搜索，复制粘贴：
     <br>
     - 切换窗口搜寻、复制……
     <br>
     - 切回来复制……
+    <br>
+    - 呃……
+
+<br>
+- 输入法的提示框里找：
+    <br>
+    - 记住各种字母顺序……
+    <br>
+    - 翻找符号
     <br>
     - 太慢！
 
@@ -48,7 +80,7 @@
     <br>
     - 也许不好用，换一个试……
     <br>
-    - 太麻烦！
+    - 太麻烦！（并不，但不是本教程但内容）
 
 <br>
 - 我是 Unicode 超人：
@@ -56,9 +88,6 @@
     - ……真的有人 `Option+00e1` ？
     <br>
     - 不现实！
-
-<br>
-- ……使用死键！
 
 ---
 
@@ -83,13 +112,13 @@
 
 ---
 
-# Windows
+# macOS
 
 TODO
 
 ---
 
-# macOS
+# Windows
 
 TODO
 
@@ -103,7 +132,7 @@ TODO
 
 # 附加符号（Diacritic）
 
-添加在字母上的符号。
+添加在字母上的符号。（Blažek, F, n.d.）
 
 不只汉语拼音的四个声调，  
 不一定在字母上方，  
@@ -137,30 +166,55 @@ TODO
 <br>
 ---
 
-# 拼音符号与教育
+# 写法与排版问题
+
+虽然现代输入和排版系统是基于西文设计的，  
+但对拼音的处理还是有不少问题。
+
+---
+
+# 教育界的拼音符号
 
 日常使用中，简单地打出拼音字符就够了。  
 
 <br>
 但如果是教人写拼音，就要格外注意其形状：
 <br>
-`a` 还是 `ɑ` ？
+双层的 `a` 还是单层的 `ɑ` ？
 <br>
-`g` 还是 `ɡ` ？
+双层的 `g` 还是单层的 `ɡ` ？
 
 ---
 
-# 拼音符号与教育
+# 教育界的拼音符号
 
 符合手写习惯的是：
-`ɑ`， `LATIN SMALL LETTER ALPHA` 和  
-`ɡ`， `LATIN SMALL LETTER SCRIPT G`。
+
+<br>
+-> *ɑ*            而不是            *a*
+
+-> `LATIN SMALL LETTER ALPHA`           `LATIN SMALL LETTER A`
+
+<br>
+-> *ɡ*              而不是              *g*
+
+-> `LATIN SMALL LETTER SCRIPT G`            `LATIN SMALL LETTER G`
 
 <br>
 国际音标（IPA）也使用这两种符号。
 
 <br>
 排版中，它们被称作 `a` 和 `g` 的 allograph。
+
+---
+
+# This was Lacewing's Toolkit
+# 这是 Lacewing 的工具箱
+# zhèshì Lacewing de gōngjùxiāng
+
+
+<br>
+## 祝你pīn dú yú kuài！
 
 ---
 
@@ -180,6 +234,12 @@ Blažek, F. (n.d.). _Diacritics Project_ Typo. http://diacritics.typo.cz/
 
 Chinese Mac Contributors. (n.d.). _Romanization_ Chinese Mac.  
     https://chinesemac.org/pages/romanization.html
+
+中华人民共和国教育部. (2012, June 1). _汉语拼音正词法基本规则_  
+    http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75607.html
+
+卡拉麦麟. (2023, July 19). _史上最快打出拼音的方法(自带音标声母韵母)_ 知乎专栏.  
+    https://zhuanlan.zhihu.com/p/105186132
 
 ---
 
