@@ -421,10 +421,12 @@ International Phonetic Association. (2020).
 
 ---
 
-# 工具列表
+# 工具
 
 [mdp](https://github.com/visit1985/mdp) — 幻灯片渲染
+ 
 [OBS Studio](https://obsproject.com/) — 视频录制
+ 
 [Kdenlive](https://kdenlive.org/) — 视频剪辑
 
 ---
