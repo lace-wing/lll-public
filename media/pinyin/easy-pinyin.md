@@ -1,7 +1,7 @@
 %title% Lacewing's Toolkit：轻松打出拼音        
 %author% Lacewing
 
-ooooooooo.  *888888*                        *888888*
+ooooooooo.   *88888*                         *88888*
 \`888   \`Y88.                                       
  888   .d88' *oooo*  ooo. .oo.   oooo    ooo *oooo*  ooo. .oo.
  888ooo88P'  *\`888*  \`888P"Y88b   \`88.  .8'  *\`888*  \`888P"Y88b
