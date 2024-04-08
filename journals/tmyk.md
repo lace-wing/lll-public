@@ -44,3 +44,21 @@ DeepL API.
 
 https://www.deepl.com/pro/change-plan?cta=apiDocsHeader#developer
 
+---
+
+mdBook, CLI tool for creating web books out of simple MD files.
+
+https://github.com/rust-lang/mdBook
+
+---
+
+Puter, a web-OS.
+
+https://github.com/HeyPuter/puter
+
+---
+
+Excalidraw, a web-based whiteboard.
+
+https://excalidraw.com/
+
