@@ -37,3 +37,10 @@ https://github.com/Yvee1/hascard
 nvimai, a plugin for using AI in Neovim.
 
 https://github.com/ZirixCZ/nvimai
+
+---
+
+DeepL API.
+
+https://www.deepl.com/pro/change-plan?cta=apiDocsHeader#developer
+
