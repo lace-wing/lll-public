@@ -62,3 +62,15 @@ Excalidraw, a web-based whiteboard.
 
 https://excalidraw.com/
 
+---
+
+Typst symbol drawing to markup.
+
+https://github.com/QuarticCat/detypify
+
+---
+
+Integrated Typst editor tool.
+
+https://github.com/Myriad-Dreamin/tinymist
+
