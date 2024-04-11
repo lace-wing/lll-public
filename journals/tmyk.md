@@ -74,3 +74,8 @@ Integrated Typst editor tool.
 
 https://github.com/Myriad-Dreamin/tinymist
 
+---
+
+Yazi, a CLI file manager.
+
+https://github.com/sxyazi/yazi?tab=readme-ov-file
