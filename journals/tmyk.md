@@ -79,3 +79,10 @@ https://github.com/Myriad-Dreamin/tinymist
 Yazi, a CLI file manager.
 
 https://github.com/sxyazi/yazi?tab=readme-ov-file
+
+---
+
+Quarto, a powerful Jupyter Notebook publishing system with rich editor support.
+
+https://quarto.org/
+
