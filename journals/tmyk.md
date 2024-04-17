@@ -86,3 +86,9 @@ Quarto, a powerful Jupyter Notebook publishing system with rich editor support.
 
 https://quarto.org/
 
+---
+
+Kanata is a cross-platform software keyboard remapper for Linux, macOS and Windows, with layers and advanced key behaviour.
+
+https://github.com/jtroo/kanata
+
