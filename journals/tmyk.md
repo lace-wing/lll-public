@@ -92,3 +92,9 @@ Kanata is a cross-platform software keyboard remapper for Linux, macOS and Windo
 
 https://github.com/jtroo/kanata
 
+---
+
+dontforgit makes you confirm and optionally commit&push changes before quiting Neovim.
+
+https://github.com/Amzd/dontforgit.nvim
+
