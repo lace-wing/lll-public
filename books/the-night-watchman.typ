@@ -374,7 +374,7 @@ Begins to curse, in dissonant blasphemies,
 
 General Sedgwick with the broken sword.
 
-Startled and strained ate the statues ears.
+Startled and strained are the statues ears.
 
 \
 
