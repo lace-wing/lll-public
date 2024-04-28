@@ -394,6 +394,8 @@ After the war the vastness of a battlefield
 
 Is listening to a lone, last crow.
 
+\
+
 Then Sirius rises from between teeth of battlements.
 
 The weighty sense of Time cumulated falls
