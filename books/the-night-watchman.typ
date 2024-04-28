@@ -14,7 +14,7 @@
 
 #let set-en(doc) = {
 	set text(lang: "en", size: 18pt)
-	set par(hanging-indent: 2em)
+	set par(hanging-indent: 1em)
 	show par: set block(spacing: 0.6em)
 	show emph: set text(
 		font: "Baskerville",
@@ -354,7 +354,7 @@ And awake is the soul of steel.
 = Seven Layers Beneath
 <seven-layers-beneath>
 
-#set text(size: 16pt)
+#set text(size: 15pt)
 
 The wind now ebbs among the pines. The sun sets
 
@@ -423,6 +423,8 @@ There is no past for you, no, not a bit.
 New Continent is still too new, past there's none for you.
 
 Your past is west of the sunset, west of it.
+
+\
 
 #align(right)[— _Devil's Den, Gettysburg_]
 
