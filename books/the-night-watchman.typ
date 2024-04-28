@@ -75,6 +75,8 @@
 	it
 }
 
+#show footnote.entry: set text(size: 12pt)
+
 #show: c => set-zh(c)
 
 //SEC cover page
@@ -146,7 +148,7 @@
 #show: c => set-zh(c)
 
 = 西螺大桥
-<hsilo-bridge>
+<h:hsilo-bridge>
 
 #set text(size: 18pt)
 
@@ -204,7 +206,7 @@
 #show: c => set-en(c)
 
 = Hsilo Bridge
-<hsilo-bridge>
+<h:hsilo-bridge>
 
 #set text(size: 18pt)
 
@@ -268,7 +270,7 @@ And awake is the soul of steel.
 #show: c => set-zh(c)
 
 = 七层下
-<seven-layers-beneath>
+<h:seven-layers-beneath>
 
 #set text(size: 16pt)
 
@@ -314,7 +316,7 @@ And awake is the soul of steel.
 		在静听一只迟归的鸦
 	],
 	[
-		天狼在雉堞的齿隙升起
+		天狼在#r[zhì|díe][雉|堞]的齿隙升起
 
 		累积的时间感，全部的重量
 
@@ -352,7 +354,7 @@ And awake is the soul of steel.
 #show: c => set-en(c)
 
 = Seven Layers Beneath
-<seven-layers-beneath>
+<h:seven-layers-beneath>
 
 #set text(size: 15pt)
 
@@ -432,37 +434,182 @@ Your past is west of the sunset, west of it.
 #show: c => set-zh(c)
 
 = 钟乳岩
+<h:smoke-hole-cavern>
 
-史前的童贞夜咽下了我们
+#grid(
+	columns: (1fr, 1fr),
+	[
+		史前的童贞夜咽下了我们
 
-无首无尾的黑暗
+		无首无尾的黑暗
 
-生之前，死之后
+		生之前，死之后
 
-冰涧漱着细细的地下水
+		冰涧漱着细细的地下水
 
-\
+		\
 
-扪到冥川上游
+		扪到冥川上游
 
-山的盲肠不通向何方
+		山的盲肠不通向何方
 
-日月都留在洞外
+		日月都留在洞外
 
-谁的手中一枝电筒
+		谁的手中一枝电筒
 
-\
+		\
 
-拔也拔不开的深邃
+		拔也拔不开的深邃
 
-仿佛凝固的梦境
+		仿佛凝固的梦境
 
-脚下是珊瑚丛
+		脚下是珊瑚丛
 
-千盏琳琅是吊灯
+		千盏琳琅是吊灯
 
-\
+		\
 
-WIP
+		石乳下降，石笋上升
 
+		盘古的白须缓缓地长着
+
+		千载以厘，万载一分
+
+		升降之间虚悬着永恒
+	],
+	[
+		永恒，永恒！缓降的石乳
+
+		对更缓的石笋耳语：
+
+		“何必如此匆匆地相约
+
+
+		我们又何必要终于相遇
+
+		在这石椁神秘的世纪？”
+
+		\
+
+		百年前，南军在洞里藏金
+
+		向导说，更早更早以前
+
+		戴羽绘面的红酋长
+
+		在洞口熏炙鹿肉
+
+		\
+
+		岩石也有音乐啊，他说
+
+		且扬杖击石
+
+		向琳琳珑珑的雕塑敲起
+
+		石器时代的流行乐
+
+		\
+	
+		#align(right)[—— _西弗吉尼亚·烟洞岩_]
+	]
+)
+
+#pagebreak()
+#show: c => set-en(c)
+
+= Smoke Hole Cavern
+<h:smoke-hole-cavern>
+
+#set text(size: 15pt)
+
+#grid(
+	columns: (1.1fr, 1fr),
+	[
+		Pre-historic virgin night devours us,
+
+		Such a headless, tailless darkness
+
+		Before our life and after our death,
+
+		Where, subterranean, blind, cold,
+
+		Gargles the trickle of a stream.
+
+		\
+
+		We grope upstream along the Lethe
+
+		To find the mountain's appendix lead
+
+		Nowhere, vaguely aware the sun \ and moon
+
+		Are left revolving somewhere outside.
+
+		In whose hand a flashlight
+
+		\
+
+		In vain tries to push aside
+
+		The impenetrability of it all,
+
+		Where a whim-dream has fossilized
+
+		Reefs of coral under our feet
+
+		And candelabra overhead.
+
+		\
+
+		So stalactites fall and stalagmites rise:
+
+		So slowly grow Creation's breads.
+
+		An inch's fall, an inch's rise
+
+		While outside, rise and fall \ the dynasties.
+
+		Eternity's where they never meet.
+	],
+	[
+		Eternity, eternity! The [stalactites] #footnote[原文为“stalagtites”]<ft:stalagtites>
+
+		Whisper to the stalagmites below:
+
+		"No hurry for us to grow and meet,
+
+		Who knows how many centuries will pass
+
+		In this mystery of a sarcophagus?"
+
+		\
+
+		A century ago the Confederates,
+
+		The guide says, here hid their gold.
+
+		And much, much earlier than that,
+
+		A feathered and painted \ Indian chief
+
+		Roasted his venison in the cave.
+
+		\
+
+		Rocks have their music too, he says
+
+		And beats them up and down
+
+		And beats them left and right
+
+		And upon such a subtle sculpture
+
+		Strikes up a pop tune of the \ Stone Age.
+
+		\
+
+		#align(right)[— _Smoke Hole Cavern, West Virginia_]
+	]
+)
 
