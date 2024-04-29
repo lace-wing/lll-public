@@ -15,7 +15,7 @@
 #let set-en(doc) = {
 	set text(lang: "en", size: 18pt)
 	set par(hanging-indent: 1em)
-	show par: set block(spacing: 0.6em)
+	show par: set block(spacing: 0.72em)
 	show emph: set text(
 		font: "Baskerville",
 
@@ -154,7 +154,7 @@
 
 #r[chù][矗]然，钢的灵魂醒着
 
-严肃的静#r[kēng|qiāng][铿|锵]着
+严肃的静#r[kēng][铿]#r[qiāng][锵]着
 
 \
 
@@ -208,7 +208,7 @@
 = Hsilo Bridge
 <h:hsilo-bridge>
 
-#set text(size: 18pt)
+#set text(size: 17pt)
 
 Loomingly, the soul of steel remains awake.
 
@@ -356,7 +356,7 @@ And awake is the soul of steel.
 = Seven Layers Beneath
 <h:seven-layers-beneath>
 
-#set text(size: 15pt)
+#set text(size: 14pt)
 
 The wind now ebbs among the pines. The sun sets
 
@@ -613,3 +613,89 @@ Your past is west of the sunset, west of it.
 	]
 )
 
+#pagebreak()
+#show: c => set-zh(c)
+
+= 当我死时
+<when-i-am-dead>
+
+当我死时，葬我，在长江与黄河
+
+之间，枕我的头颅，白发盖着黑土
+
+在中国，最美母亲的国度
+
+我便坦然睡去，睡整张大陆
+
+听两侧，安魂曲起自长江，黄河
+
+两管永生的音乐，滔滔，朝东
+
+这是最纵容最宽阔的床
+
+让一颗心满足地睡去，满足地想
+
+从前，一个中国的青年曾经
+
+在冰冻的密西根向西瞭望
+
+想望透黑夜看中国的黎明
+
+用十七年未#r[yàn][餍]中国的眼睛
+
+饕餮地图，从西湖到太湖
+
+到多鹧鸪的重庆，代替回乡
+
+#pagebreak()
+#show: c => set-en(c)
+
+= When I Am Dead
+<when-i-am-dead>
+
+When I am dead, lay me down between the Yangtze
+
+And the Yellow River and pillow my head
+
+On China, white hair against black soil,
+
+Most beautiful O most maternal of lands,
+
+And I will sleep my soundest taking
+
+The whole mainland of my cradle lulled
+
+By the mother-hum that rises on both sides
+
+From the two great rivers, two long, long songs
+
+That on and on flow forever to the East.
+
+This the world's most indulgent roomiest bed
+
+Where, content, a heart pauses to rest
+
+And recalls how, of a Michigan winter night,
+
+A youth from China used to keep
+
+Intense watch towards the East, trying
+
+To pierce his look through darkness for the dawn
+
+Of China. So with hungry eyes he devoured
+
+The map, eyes for seventeen years starved
+
+For a glimpse of home, and like a new weaned child
+
+He drank with one wild gulp rivers and lakes
+
+From the mouth of Yangtze all the way up
+
+To Poyang #footnote[潘阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:tungting> and to Koko Nor #footnote[青海湖]<ft:koko-nor>
+
+#pagebreak()
+#show: c => set-zh(c)
+
+WIP
