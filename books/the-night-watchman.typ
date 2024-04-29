@@ -693,7 +693,7 @@ He drank with one wild gulp rivers and lakes
 
 From the mouth of Yangtze all the way up
 
-To Poyang #footnote[潘阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:tungting> and to Koko Nor #footnote[青海湖]<ft:koko-nor>
+To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:tungting> and to Koko Nor #footnote[青海湖]<ft:koko-nor>
 
 #pagebreak()
 #show: c => set-zh(c)
