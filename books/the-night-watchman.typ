@@ -698,4 +698,89 @@ To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:
 #pagebreak()
 #show: c => set-zh(c)
 
-WIP
+= 灰鸽子
+<h:gray-pigeons>
+
+废炮怔怔地望着远方
+
+灰鸽子在草地上散步
+
+含含糊糊的一种
+
+诉苦，嘀咕嘀咕嘀咕
+
+一整个下午的念珠
+
+数来数去未数清
+
+海的那边一定
+
+有一个人在念我
+
+有一片唇在惦我
+
+有一张嘴在呵我
+
+呵痒下午的耳朵
+
+下午敏感的耳朵
+
+仰起，在玉蜀黍田里
+
+盛好几英里的寂寞
+
+向晚的日色，冰冰
+
+弥满珍珠色的云层
+
+灰鸽子在废炮下散步
+
+一种含含糊糊的诉苦
+
+含含糊糊在延续
+
+#pagebreak()
+#show: c => set-en(c)
+
+= Gray Pigeons
+<h:gray-pigeons>
+
+The old guns muse and look afar.
+
+Gray pigeons saunter on the lawn;
+
+An obscure, subdued complaint
+
+Now and then is heard to coo and croon.
+
+On and on through the afternoon
+
+A rosary's told and told and told,
+
+The secrets of beads still unknown.
+
+I have a hunch across the sea
+
+There's someone murmuring my name,
+
+Some unseen lips tickling my ear.
+
+Itchy's the ear of afternoon;
+
+The sensitive ear of early dusk
+
+Turns up, with fields full of corn,
+
+And holds a loneliness for miles.
+
+The slow sun does more to chill than cheer,
+
+Dimmed further bt pearly clouds.
+
+Under the old guns gray pigeons moan,
+
+A complaint most inarticulate,
+
+Which seems to stammer and hesitate
+
+Off and on through the afternoon.
