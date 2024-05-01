@@ -33,6 +33,22 @@
 	doc
 }
 
+#let hg = h(1em)
+
+#let emph-en(body) = {
+	show emph: set text(
+		font: "Baskerville",
+	)
+	emph(body)
+}
+#let emph-zh(body) = {
+	show emph: set text(
+		font: "Kaiti SC",
+		style: "normal"
+	)
+	emph(body)
+}
+
 #set text(
 	font: (
 		"Times New Roman",
@@ -784,3 +800,271 @@ A complaint most inarticulate,
 Which seems to stammer and hesitate
 
 Off and on through the afternoon.
+
+#pagebreak()
+#show: c => set-zh(c)
+
+= 单人床
+<the-single-bed>
+
+月是盲人的一只眼睛
+
+怒瞰着夜，透过蓬松的云
+
+#r[yín][狺]狺的风追过去
+
+这黑穹！比绝望更远，比梦更高
+
+要冻成爱斯基摩的冰屋
+
+中国比太阳更陌生，更陌生，今夜
+
+家人无信，朋友皆远离
+
+没有谁记得谁的地址
+
+寂寞是一张单人床
+
+向夜的四垠无限地延伸
+
+我睡在月之下，草之上，枕着空无，枕着
+
+一种渺渺茫茫的悲辛，而风
+
+依然在吹着，吹黑暗成冰
+
+吹胃中的激昂成灰烬，于是
+
+有畸形的鸦，一只丑于一只
+
+自我的眼中，口中，#r[chuáng][幢]幢然飞起
+
+#pagebreak()
+#show: c => set-en(c)
+
+= The Single Bed
+<the-single-bed>
+
+The moon is a blind man's eye that glowers
+
+At the night through shaggy, unkempt clouds,
+
+Hounded by packs of growling winds.
+
+Look, look up at the firmament
+
+That's freezing into an igloo roof,
+
+Farther than despair, loftier than a dream!
+
+China is more remote than the sun tonight,
+
+When family is remote and friends apart,
+
+And addresses, once so dear, are all forgot.
+
+Loneliness is a single bed
+
+That endlessly extends and extends
+
+Towards the four horizons of the night.
+
+Between the moon and gross I sleep, pillowed
+
+Upon a sorrow undefined, while the wind
+
+Is blowing darkness into a block of ice
+
+And into ashes the passion in my guts,
+
+From which deformed crows, one uglier than the other,
+
+Arise, winging and squawking from my mouth and eyes.
+
+#pagebreak()
+#show: c => set-zh(c)
+
+= 黑天使
+<the-black-angel>
+
+#set text(size: 16pt)
+
+#grid(
+	columns: (1fr, 0.18fr, 1fr),
+	rows: (1fr, 0.55fr),
+	[
+		黑天使从夜的脐孔里
+
+		#hg 飞至，从月落乌啼
+
+		#hg 的天空，当狼群咀嚼
+
+		落月，鼠群窸窸窣窣噬尽
+
+		\
+
+		满天的星屑，我就是
+
+		#hg 不详天使，迅疾
+
+		#hg 扑至，一封死亡电报
+
+		猛然捶打你闭门不醒
+
+		\
+
+		的恶魔，我就是黑天使
+
+		#hg 白天使中我已被
+
+		#hg 除籍，翻开任何
+
+		黑名单，赫然，你不会看不见
+
+		\
+
+		我的名字，叫黑天使，我就是
+
+		#hg 夜巡的黑鹰
+
+		#hg 最黑最暗的
+
+		夜里，我瞥见最善伪装的
+	],
+	[],
+	[
+		罪恶，且在他头顶盘旋
+
+		#hg 等垂毙的前夕
+
+		#hg 作俯冲的一击
+
+		我就是黑天使，我永远
+
+		\
+
+		独羽逆航，在雨上，电上
+
+		#hg 向成人说童话
+
+		#hg 是白天使们
+
+		的职业，我是头颅悬价
+
+		\
+
+		的刺客，来自黑帷以外，来自
+
+		#hg 夜的盲哑的深处
+
+		#hg 来自黪黪的帝国
+
+		的墨墨京都，黑天使，我就是
+	],
+	grid.cell(
+		colspan: 3,
+		align(right)[
+			#set text(size: 14pt)
+			_自注：写成后，才发现这首《黑天使》是首尾相衔的联锁体，段与段之间不可能读断。Emily Dickinson 的 #emph-en[_I Like to See It Lap the Miles_] 近于此体。_
+		]
+	),
+)
+
+#pagebreak()
+#show: c => set-en(c)
+
+= The Black Angel
+<the-black-angel>
+
+#set text(size: 14pt)
+
+#grid(
+	columns: (1fr, 0.04fr, 1fr),
+	[
+		Swift swoops down the Black Angel
+
+		From night's innermost navel,
+
+		From a sky of setting moon and crows
+
+		When wolves are tearing the crescent
+
+		And swarms of rats are nibbling at
+
+		\
+
+		The remaining star-crumbs. I am
+
+		The Angel of Ill Omen
+
+		Who descends at the worst moment
+
+		With an obituary telegram
+
+		To bang your door and call you up
+
+		\
+
+		From amidst your \ nightmares and sweat.
+
+		Among all angels alone I'm black,
+
+		An outlaw to every angel white,
+
+		And on every black list, long or short,
+
+		Most conspicuous you never miss
+
+		\
+
+		My name, marked \ BLACK ANGEL. I am
+
+		The black angel cruising at night
+
+		Through the darkest, the most opaque
+
+		Blindness of a moonless, \ dawnless night
+
+		I never discovered \ the best camouflaged
+	],
+	[],
+	[
+		Of evils but will circle over its head
+
+		To watch for its last breath of sin
+
+		And rush all of a sudden down
+
+		Upon its death long overdue,
+
+		For I am the Black Angel \ who never flies
+
+		\
+
+		But by himself through \ lightnings and rain.
+
+		To tell the grown-ups fairy tales,
+
+		To tell them that God never fails,
+
+		The white angels are \ more than well-paid.
+
+		But I am, with a high price \ on my head,
+
+		\
+
+		The Arch-Assassin none can stop
+
+		From breaking through the draperies
+
+		And rings of guards, \ from where the night
+
+		Is at its most deaf and blind, \ from outside
+
+		The Dark Tower overhanging \ the Dark Lord:
+
+		\
+
+		Where the Black Angel strikes, I strike.
+	]
+)
