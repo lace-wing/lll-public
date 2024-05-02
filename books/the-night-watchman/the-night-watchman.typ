@@ -869,7 +869,7 @@ That endlessly extends and extends
 
 Towards the four horizons of the night.
 
-Between the moon and gross I sleep, pillowed
+Between the moon and grass I sleep, pillowed
 
 Upon a sorrow undefined, while the wind
 
