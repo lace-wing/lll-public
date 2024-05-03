@@ -885,7 +885,7 @@ Arise, winging and squawking from my mouth and eyes.
 #show: c => set-zh(c)
 
 = 黑天使
-<the-black-angel>
+<h:the-black-angel>
 
 #set text(size: 16pt)
 
@@ -974,7 +974,7 @@ Arise, winging and squawking from my mouth and eyes.
 #show: c => set-en(c)
 
 = The Black Angel
-<the-black-angel>
+<h:the-black-angel>
 
 #set text(size: 14pt)
 
@@ -1068,3 +1068,127 @@ Arise, winging and squawking from my mouth and eyes.
 		Where the Black Angel strikes, I strike.
 	]
 )
+
+#pagebreak()
+#show: c => set-zh(c)
+
+= 有一只死鸟
+<h:there-was-a-dead-bird>
+
+冬至以后，春分以前
+
+那一种方言最安全？
+
+如果你是一只鸣禽
+
+美丽，而且有一身白羽
+
+便可以将你剥制成标本
+
+装饰那家博物馆，栩栩如生
+
+拉丁文的学名下，注明
+
+一种鸣禽，能歌，能高翔
+
+罕见的品种，日趋灭亡
+
+或者你可以按时唱歌
+
+堂皇的客厅，栖你在壁上
+
+制造顺耳的室内乐，可以乱真
+
+钟叩七下，你就啭七声
+
+顺着钟面的短针，长针
+
+或者你坚持在户外歌唱
+
+在零下的冬季，当咳嗽
+
+成为流行的语言，而且安全
+
+你坚持一种醒耳的高音
+
+向黑色的风和黑色的云
+
+猎枪的射程内，你拒绝闭口
+
+你不屑咳嗽，当冷飙
+
+当冷飙射进你的热喉
+
+杀死一只鸣禽，杀不死春天
+
+歌者死后，空中有间歇的回音
+
+或者你坚持歌唱，面对着死亡
+
+#pagebreak()
+#show: c => set-en(c)
+
+= There Was a Dead Bird
+<h:there-was-a-dead-bird>
+
+#set text(size: 15pt)
+
+When winter solstice's here
+
+And vernal equinox still far,
+
+What dialect is most safe to adopt?
+
+If you're a warbler of a bird,
+
+Beautiful, white all over feathered,
+
+You'll be a taxidermist's delight
+
+To adorn that museum, vivid as if undead.
+
+Under the Latin name will be noted:
+
+A song bird, swift in song and in flight,
+
+Of rare species now, all but extinct.
+
+Or you can sing a timely song
+
+To earn your place in a draped room,
+
+Perched demurely upon a wall,
+
+And pleasing chamber music to make,
+
+Away from the wild woodnote call.
+
+When the clock strikes eleven,
+
+Eleven times, then, must you chime
+
+Under the batons of short hand and long.
+
+Or you will insist on an outdoor song
+
+In the chill-spell of winter when
+
+Sneeze and cough are in tune and safe.
+
+You insist upon an ear-piercing pitch
+
+Against black blasts of a dark night,
+
+No shotgun within range can silence that itch
+
+Not to cough, but to cry in despite
+
+Of the icy blast at your throbbing throat.
+
+No spring is murdered by killing a bird:
+
+A singer dies, yes, but a song never does.
+
+The air never forgets a martyred breath.
+
+Or you can sing on in the teeth of death.
