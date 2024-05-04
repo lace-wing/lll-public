@@ -12,6 +12,12 @@
 	alignment: "center"
 )
 
+#let ed-note-date = datetime(
+	year: 2024,
+	month: 5,
+	day: 4
+)
+
 #let set-en(doc) = {
 	set text(lang: "en", size: 18pt)
 	set par(hanging-indent: 1em)
@@ -33,6 +39,7 @@
 	doc
 }
 
+#let ld = h(2em)
 #let hg = h(1em)
 
 #let emph-en(body) = {
@@ -49,6 +56,11 @@
 	emph(body)
 }
 
+#let note(body) = {
+	set text(size: 1em * 0.75, weight: "thin")
+	body
+}
+
 #set text(
 	font: (
 		"Times New Roman",
@@ -60,7 +72,7 @@
 #show heading: it => {
 	if it.at("label", default: none) == none {
 		it
-		v(0.8em)
+		v(0.5em)
 		return
 	}
 	it
@@ -79,7 +91,7 @@
 			has-alt = true
 		}
 	}
-	v(0.8em)
+	v(0.5em)
 }
 
 #set par(justify: false)
@@ -102,7 +114,7 @@
 	grid(
 		columns: (3fr, 1fr),
 		[
-			#text(size: 24pt)[余光中] 著·译
+			#text(size: 24pt)[余光中] 著$space.hair$译
 			#v(2em)
 			#set text(weight: "light", fill: black.lighten(33%))
 			有这么一个人：像我像他像你 \
@@ -134,27 +146,120 @@
 		]
 		#v(4em)
 		#align(center)[
-			余光中诗歌自选集 \
 			中｜英
 		]
 	],
 )
 
+//SEC disclaimer
+#set heading(outlined: false)
 #pagebreak()
+#show: c => set-zh(c)
+#set text(size: 14pt)
+
+= 免责声明
+本书仅用于个人学习、研究或者交流，不作商业用途；所载正文的相应权利均属于原权利人；如权利人认为不妥，请#link("mailto:lycrlsu01@gmail.com")[电邮]说明，本用户随即暂停公开发布此书。
+
+本书的序语、注释等非正文部分仅代表编者意见，不代表作者意见。
+
+= 公开协议
+除非注明，本书及其源码的非正文部分，即不属于原权利人的部分，在#link("https://creativecommons.org/licenses/by/4.0/")[CC-BY 4.0]协议下公开。
+
+#place(
+	left+bottom,
+	dy: -5%
+)[
+	#block(
+		width: 6em,
+		height: 3em
+	)[
+		#set align(center)
+		#grid(
+			columns: (6em, 6em),
+			rows: (1fr, 1fr),
+			[著译者], [*余光中*],
+			[编排者], [*Lacewing*]
+		)
+	]
+]
 
 //SEC editor's note
-
+#pagebreak()
 #show: c => set-zh(c)
 
-#heading(level: 1, outlined: false)[编者按]
+= 编者序语
 
-我想作者一定不会介意我编写此书的。
+#set text(size: 14pt)
 
-#align(right)[#datetime.today().display()]
+#ld 为什么花时间把别人已经出了书的作品再编一次？刚开始，这只是我一时兴起，想用自己喜欢的诗人的作品练习Typst罢了：中文诗作，由作者自己翻译成了英文，我再编排出来；这岂不是华文与英文文学、中英翻译和排版都有所涉及？我恰好对这三个领域感兴趣，便做了。这也是正文按中英配对，两面相接的原因。
+
+#ld 至于正在读本文的你呢？如果你恰好对余光中的诗，或者中译英的工作感兴趣的话，那是再好不过；我们可一同品味作者独特的视角（有他这样经历且写成诗的人可不多）和他在翻译自己作品时的思考。若是来看Typst的排版功能，我恐怕得为此书打上“仅供参考”的标签——此前我只简单用Typst排过几篇论文，也未受过任何专业排版训练，更没有什么拿得出手的作品；且算作业余人自作自乐吧。
+
+#ld 没有激起你继续阅读的欲望？还请在此页稍作休息，容我念叨一会。从学前到高中，我都不觉得自己是什么有“文学气息”的人，每日看的都是科技政经，从未想过涉猎语文艺术；至于中国学生必经的“语文”之科目？我从来都不是个“好学生”，不愿意按照模版去解读“作者的深意”，自然没有驱使我进一步学习的正反馈。
+
+#ld 此间虽偶有我愿做文学鉴赏或创作的机会，都没起显著的效果。后来我得大把空闲时间思考时，读与写的念头才回到脑中。作为一名“刚刚接触互联网的00后少年”，长时间钻在物理化学课本中，有太多的问题从来没有被回答；既“悟以往之不谏”，却不知“来者之可追”，也许这是青春期常见的问题？只知当时我有多么烦闷和困扰，直到我重新自愿拿起文学读物：网络博客、经典小说、古今诗歌……直到我开始做文学相关的工作：文学分析、中英翻译、文档写作……“春风化雨”，我会用这个词形容这一段经历，正如电影《死亡诗社》也被译为此名。
+
+#ld 有太多问题科学还要很多年才能解答，可惜我不能在此间呆太久，没法一直等待。而文学告诉我为何提出问题，且予我不解答问题的勇气。
+
+#ld 虽然余光中来自我不熟悉的时代，但许多他面临过的问题正困扰着我和其他很多相同或不同时代的人。不妨在闲时打开某一电子文档（或更传统一些，翻开某一纸质文档），读读别人的思想，写写自己的评论；或许就这一本？
+
+#align(right)[Lacewing \ #ed-note-date.display()]
+
+//SEC special thanks
+
+#pagebreak()
+#show: c => set-zh(c)
+#set text(size: 14pt)
+
+= #text(size: 1em * 1.5)[特别感谢]
+
+== 12公里#note[（原蓝天作文网）]
+我文学创作的起点。
+
+=== 石老师
+我当时的语文老师，鼓励我尝试文学创作。
+
+== Ms. Lim
+我后来的中华文学老师，带我领略文学的魅力。
+#blockquote[复活在我，生命也在我]
+
+== tModLoader 社区
+我翻译工作的第一站，其对本地化的重视让我倍受鼓舞。
+
+=== 万象元素#note[（昵称）]
+支持我对翻译的初次尝试，也为我打开了另一扇门。
+
+=== 裙形态#note[（昵称）和] 棱镜#note[（昵称）]
+引我了解LaTex和Markdown，以及排版语言的世界。
+#grid(
+	columns: (1fr, 0.1fr, 1fr),
+	blockquote[我都用的Overleaf],
+	[],
+	blockquote[感觉不如 Marp]
+)
+
+=== 夜谷紫幽#note[（昵称）]
+我排版与文档编写之旅上的同伴，相互答疑解惑。
+#blockquote[找到问题了，函数名只有一个字母时会当成字符]
+
+#[
+	#set align(center+horizon)
+	#show heading: it => text(size: 1em * 2)[#it]
+
+	== 余光中
+	感谢余光中先生，你的创作带我走出低落的时刻，拂开障目一叶。
+
+	#v(10%)
+
+	== Typst
+	感谢Typst，你精巧的功能和热情的社区是我编排此书的动力和助力。
+]
 
 //SEC outline
 
 #pagebreak()
+#show: c => set-zh(c)
+#set heading(outlined: true)
 #outline(title: [目录])
 
 //SEC main body
@@ -966,8 +1071,9 @@ Arise, winging and squawking from my mouth and eyes.
 	grid.cell(
 		colspan: 3,
 		align(right)[
-			#set text(size: 14pt)
-			_自注：写成后，才发现这首《黑天使》是首尾相衔的联锁体，段与段之间不可能读断。Emily Dickinson 的 #emph-en[_I Like to See It Lap the Miles_] 近于此体。_
+			#note[
+				_自注：写成后，才发现这首《黑天使》是首尾相衔的联锁体，段与段之间不可能读断。Emily Dickinson 的 #emph-en[_I Like to See It Lap the Miles_] 近于此体。_
+			]
 		]
 	),
 )
