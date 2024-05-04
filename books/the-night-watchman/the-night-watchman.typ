@@ -1212,7 +1212,7 @@ Arise, winging and squawking from my mouth and eyes.
 
 		钟叩七下，你就啭七声
 
-		顺着钟面的短针，长针 #footnote[译注：此处并未分段]<ft:no-par-sep>
+		顺着钟面的短针，长针 #footnote[此处并未分段]<ft:no-par-sep>
 	],
 	[
 		或者你坚持在户外歌唱
