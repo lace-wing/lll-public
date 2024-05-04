@@ -8,14 +8,14 @@
 
 #let r = get-ruby(
 	size: 0.4em,
-	dy: 1pt,
+	dy: 2pt,
 	alignment: "center"
 )
 
 #let set-en(doc) = {
 	set text(lang: "en", size: 18pt)
 	set par(hanging-indent: 1em)
-	show par: set block(spacing: 0.72em)
+	show par: set block(spacing: 0.74em)
 	show emph: set text(
 		font: "Baskerville",
 
@@ -25,7 +25,7 @@
 #let set-zh(doc) = {
 	set text(lang: "zh", size: 18pt)
 	set par(hanging-indent: 0em)
-	show par: set block(spacing: 0.7em)
+	show par: set block(spacing: 1em)
 	show emph: set text(
 		font: "Kaiti SC",
 		style: "normal"
@@ -166,57 +166,59 @@
 = 西螺大桥
 <h:hsilo-bridge>
 
-#set text(size: 18pt)
+#grid(
+	columns: (1.23fr, 1.12fr),
+	[
+		#r[chù][矗]然，钢的灵魂醒着
 
-#r[chù][矗]然，钢的灵魂醒着
+		严肃的静#r[kēng][铿]#r[qiāng][锵]着
 
-严肃的静#r[kēng][铿]#r[qiāng][锵]着
+		\
 
-\
+		西螺平原的海风猛撼着这座
 
-西螺平原的海风猛撼着这座
+		意志之塔的每一根神经
 
-意志之塔的每一根神经
+		猛撼着，而且绝望地啸着
 
-猛撼着，而且绝望地啸着
+		而铁钉的齿紧紧咬着， \ 铁臂的手紧紧握着
 
-而铁钉的齿紧紧咬着，铁臂的手紧紧握着
+		严肃的静
 
-严肃的静
+		于是，我的灵魂也醒了， \ 我知道
 
-于是，我的灵魂也醒了，我知道
+		既渡的我将异于
 
-既渡的我将异于
+		未渡的我，我知道
 
-未渡的我，我知道
+		彼岸的我不能复原为
 
-彼岸的我不能复原为
+		此岸的我
 
-此岸的我
+		但命运自神秘的一点伸过来
 
-但命运自神秘的一点伸过来
+		一千条欢迎的臂，我必须渡河
+	],
+	[
+		面临通向另一个世界的
 
-一千条欢迎的臂，我必须渡河
+		走廊，我微微地颤抖
 
-\
+		但西螺平原壮阔的风
 
-面临通向另一个世界的
+		迎面扑来，告我以海在彼端
 
-走廊，我微微地颤抖
+		我微微地颤抖，但是我
 
-但西螺平原壮阔的风
+		必须渡河
 
-迎面扑来，告我以海在彼端
+		\
 
-我微微地颤抖，但是我
+		矗立着，庞大的沉默
 
-必须渡河
-
-\
-
-矗立着，庞大的沉默
-
-醒着，钢的灵魂
+		醒着，钢的灵魂
+	]
+)
 
 #pagebreak()
 #show: c => set-en(c)
@@ -891,7 +893,7 @@ Arise, winging and squawking from my mouth and eyes.
 
 #grid(
 	columns: (1fr, 0.18fr, 1fr),
-	rows: (1fr, 0.55fr),
+	rows: (1fr, 0.3fr),
 	[
 		黑天使从夜的脐孔里
 
@@ -1075,55 +1077,63 @@ Arise, winging and squawking from my mouth and eyes.
 = 有一只死鸟
 <h:there-was-a-dead-bird>
 
-冬至以后，春分以前
+#grid(
+	columns: (1fr, 1.07fr),
+	[
+		冬至以后，春分以前
 
-那一种方言最安全？
+		那一种方言最安全？
 
-如果你是一只鸣禽
+		如果你是一只鸣禽
 
-美丽，而且有一身白羽
+		美丽，而且有一身白羽
 
-便可以将你剥制成标本
+		便可以将你剥制成标本
 
-装饰那家博物馆，栩栩如生
+		装饰那家博物馆， \ 栩栩如生
 
-拉丁文的学名下，注明
+		拉丁文的学名下，注明
 
-一种鸣禽，能歌，能高翔
+		一种鸣禽，能歌，能高翔
 
-罕见的品种，日趋灭亡
+		罕见的品种，日趋灭亡
 
-或者你可以按时唱歌
+		或者你可以按时唱歌
 
-堂皇的客厅，栖你在壁上
+		堂皇的客厅，栖你在壁上
 
-制造顺耳的室内乐，可以乱真
+		制造顺耳的室内乐， \ 可以乱真
 
-钟叩七下，你就啭七声
+		钟叩七下，你就啭七声
 
-顺着钟面的短针，长针
+		顺着钟面的短针，长针 #footnote[译注：此处并未分段]<ft:no-par-sep>
+	],
+	[
+		或者你坚持在户外歌唱
 
-或者你坚持在户外歌唱
+		在零下的冬季，当咳嗽
 
-在零下的冬季，当咳嗽
+		成为流行的语言，而且安全
 
-成为流行的语言，而且安全
+		你坚持一种醒耳的高音
 
-你坚持一种醒耳的高音
+		向黑色的风和黑色的云
 
-向黑色的风和黑色的云
+		猎枪的射程内，你拒绝闭口
 
-猎枪的射程内，你拒绝闭口
+		你不屑咳嗽，当冷飙
 
-你不屑咳嗽，当冷飙
+		当冷飙射进你的热喉
 
-当冷飙射进你的热喉
+		杀死一只鸣禽，杀不死春天
 
-杀死一只鸣禽，杀不死春天
+		歌者死后，空中有间歇的回音
 
-歌者死后，空中有间歇的回音
+		或者你坚持歌唱，面对着死亡
+	]
+)
 
-或者你坚持歌唱，面对着死亡
+
 
 #pagebreak()
 #show: c => set-en(c)
@@ -1192,3 +1202,133 @@ A singer dies, yes, but a song never does.
 The air never forgets a martyred breath.
 
 Or you can sing on in the teeth of death.
+
+#pagebreak()
+#show: c => set-zh(c)
+
+= 致读者
+<h:to-the-reader>
+
+一千个故事是一个故事
+
+那主题永远是一个主题
+
+永远是一个羞耻和荣誉
+
+当我说中国时我只是说
+
+有这么一个人：像我像他像你
+
+#pagebreak()
+#show: c => set-en(c)
+
+= To the Reader
+<h:to-the-reader>
+
+A thousand stories make one story;
+
+The theme forever same's the theme,
+
+Forever the shame and the glory;
+
+When I say China I only mean
+
+Such as myself and you and him.
+
+#pagebreak()
+#show: c => set-zh(c)
+
+= 双人床
+<h:the-double-bed>
+
+让战争在双人床外进行
+
+躺在你长长的斜坡上
+
+听流弹，像一把呼啸的萤火
+
+在你的，我的头顶窜过
+
+窜过我的胡须和你的头发
+
+让政变和革命在四周呐喊
+
+至少爱情在我们的一边
+
+至少破晓前我们很安全
+
+当一切都不再可靠
+
+靠在你弹性的斜坡上
+
+今夜，即使会山崩或地震
+
+最多跌进你低低的盆地
+
+让旗和铜号在高原上举起
+
+至少有六尺的韵律是我们
+
+至少日出前你完全是我的
+
+仍滑腻，仍柔软，仍可以烫熟
+
+一种纯粹而精细的疯狂
+
+让夜和死亡在黑的边境
+
+发动永恒第一千次围城
+
+惟我们循螺旋纹急降，天国在下
+
+卷入你四肢美丽的漩涡
+
+#pagebreak()
+#show: c => set-en(c)
+
+= The Double Bed
+<h:the-double-bed>
+
+Let war rage on beyond the double bed
+
+As I lie on the length of your slope
+
+And hear the straying bullets
+
+Like a whistling swarm of glow-worms
+
+Swish by over your head and mine
+
+And through your hair and through my beard.
+
+On all sides let revolutions growl,
+
+Love at least is on our side.
+
+We'll be safe at least before the dawn.
+
+When nothing is there to rely upon,
+
+On your supple warmth I can still depend.
+
+Tonight, let mountains topple and earth quake,
+
+The worst is but fall down your lowly vale.
+
+Let banners and bugles rise high on the hills,
+
+Six feet of rhythm at least are ours,
+
+Before sunrise at least you still are mine,
+
+Still so sleek, so soft, so fully alive
+
+To kindle a wildness pure and fine.
+
+Let Night and Death on the border of darkness
+
+Launch the thousandth siege of eternity
+
+As we plunge whirling down, Heaven beneath,
+
+Into the maelstrom of your limbs.
