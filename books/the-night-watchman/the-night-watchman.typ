@@ -24,7 +24,6 @@
 	show par: set block(spacing: 0.74em)
 	show emph: set text(
 		font: "Baskerville",
-
 	)
 	body
 }
@@ -104,12 +103,26 @@
 	set text(weight: "light")
 	it
 }
-// #let ol-colors = (
-// 	black.lighten(50%),
-// 	yellow.darken(50%),
-// 	red.darken(50%),
-// 	green.darken(50%)
-// )
+#let ol-colors = (
+	green.darken(70%),
+	blue.darken(70%)
+)
+#let ol-prev = state("ol-prev", [])
+#let ol-count = counter(<ct:ol>)
+#show outline.entry: e => context {
+	if not e.element.has("label") {
+		return e
+	}
+	let prev = ol-prev.get()
+	let prev-lb = prev.at("element", default: []).at("label", default: [])
+	if e.element.label != prev-lb {
+		ol-count.step()
+	}
+	context {
+		set text(fill: ol-colors.at(calc.rem(..ol-count.get(), ol-colors.len())))
+		e
+	}
+} + ol-prev.update(e)
 
 #show footnote.entry: set text(size: 12pt)
 
