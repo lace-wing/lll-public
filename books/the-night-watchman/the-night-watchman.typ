@@ -117,9 +117,9 @@
 #[
 	#set page(margin: -2em) // max 26 zh char
 	#show: set-zh
-	#let art-color = maroon.darken(20%)
-	#let name-color = red.darken(50%)
-	#let role-color = yellow.darken(55%)
+	#let art-color = maroon.darken(15%)
+	#let name-color = red.darken(45%)
+	#let role-color = yellow.darken(60%)
 	#set text(
 		font: (
 			"MonaspiceRn NF",
