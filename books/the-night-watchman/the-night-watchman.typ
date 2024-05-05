@@ -42,19 +42,21 @@
 #let ld = h(2em)
 #let hg = h(1em)
 
-#let emph-en(body) = {
+#let e-en(body) = {
 	show emph: set text(
 		font: "Baskerville",
 	)
 	emph(body)
 }
-#let emph-zh(body) = {
+#let e-zh(body) = {
 	show emph: set text(
 		font: "Kaiti SC",
 		style: "normal"
 	)
 	emph(body)
 }
+
+#let s(body) = strong(body)
 
 #let note(body) = {
 	set text(size: 1em * 0.75, weight: "thin")
@@ -70,13 +72,13 @@
 )
 
 #show heading: it => {
-	if it.at("label", default: none) == none {
+	if not it.has("label") {
 		it
 		v(0.5em)
 		return
 	}
 	it
-	let hds = query(heading).filter(h => h.at("label", default: none) != none).filter(h => h != it)
+	let hds = query(heading).filter(h => h.has("label")).filter(h => h != it)
 	let has-alt = false
 	for hd in hds {
 		set text(size: 12pt, weight: "light")
@@ -102,12 +104,97 @@
 	set text(weight: "light")
 	it
 }
+// #let ol-colors = (
+// 	black.lighten(50%),
+// 	yellow.darken(50%),
+// 	red.darken(50%),
+// 	green.darken(50%)
+// )
 
 #show footnote.entry: set text(size: 12pt)
 
-#show: c => set-zh(c)
+//SEC exp cover page
+#[
+	#set page(margin: -2em) // max 26 zh char
+	#show: c => set-zh(c)
+	#set text(
+		font: (
+			"MonaspiceRn NF",
+			"Kaiti SC"
+		),
+		size: 24pt,
+		fill: white.darken(15%),
+	)
+	#show emph: set text(
+		fill: yellow.darken(55%),
+		weight: "extralight",
+		stroke: yellow.darken(55%)+1.25pt
+	)
+	#show strong: set text(
+		fill: red.darken(50%),
+		weight: "extralight",
+		stroke: red.darken(50%)+1.25pt
+	)
+	#let g(body) = text(
+		fill: green.darken(60%),
+		weight: "extralight",
+		stroke: green.darken(60%)
+	)[#body]
 
+	#place(center+horizon)[
+		#grid(
+			rows: (0.98em, ) * 36,
+			align: center+horizon,
+			stroke: none,
+			gutter: -0pt,
+			// 26 zh char
+			// 45 en char
+			// [矗然钢的灵魂醒着严肃的静铿锵着西螺平原的海风猛撼着这],
+			[座意志之塔的每一根神经猛撼着而且绝望地啸着而铁钉的齿],
+			[紧紧咬着铁臂的手紧紧握着严肃的静于_是_我的灵魂也醒了我],
+			[知道既渡的我将异于未渡的_我我知道彼岸的我不能复_原为此],
+			[岸的我但命运自神秘的一点_伸_过来一千条欢迎的臂_我_必须渡],
+			[河太上无情古战场的浪子啊_你_没什么往事_没_有一星_星_新大陆],
+			[太新没有你的往事往事在落日以西唉以西_寂_寞是一张单人床],
+			[向成人说童话是白天使们的_职业我是头颅悬价的刺客_来自黑],
+			[帷以外或者你坚持在户外歌唱在零下的冬_季_当咳嗽成为流行],
+			[的语言而且安全一千个故事是一_个_故事那_主_题永远是一个主],
+			[题永远是一个羞耻和荣誉当我说中_国_时我_只_是说有这么一个],
+			[人像我像他像你五十_年_后你将在博物馆看_见_这尊黑凛凛的巨],
+			[兽吐完喉_中的敌意膛中的恨在火狱_和烟_网呼_痛和呼救之后搁],
+			[浅在历史无助_的_岸边在_半_世纪在半世纪之后而且不了解在半],
+			[世纪半世纪之_前_一分钟_的疯狂比_五十年更长我的敌人是夜不],
+			[是任一只鼠_在_我们这_时_代每一_枝_笔是一个例外每一枝避雷针],
+			[都相信敢于_应_战的_不_死于_战_争_我_希望这女孩的回忆比我的要],
+			[美丽传说_北方_有_一_首_民_歌只_有_黄河的肺活_量_能唱从青海到黄],
+			[海风也听见_沙_也听见那_海_棠_究_竟是外伤还_是_内伤再也分不清],
+			[全睡着了吧_下_面那世界连_雨_声也不再陪我_小_时候乡愁是一枚],
+			[小小的邮票_我_在这头母_亲_在_那_头茫然握着_听_筒断了一截断了],
+			[的脐带握着_要_拨哪_个号_码呢每_一粒_晴天_的_露_珠_每一粒阴天的],
+			[雨珠分手的日子每一粒牵挂在心头的念_珠_串_成_有始有终的这],
+			[一条项链只风吹星光颤不休剩我与永_恒_拔河黄_河_西来大江东],
+			[去此外五千年都已沉寂真的就是吗烛_啊_我问你_一_阵风过你轻],
+			[轻的摇头有意无意地像在说否无意_有_意地又像在_说_是怎么还],
+			[没有停啊从传说落到了现在从霏_霏_落到了湃湃从檐_漏_落到了],
+			[江海最后的*守夜人*守最后一盏_灯_只为撑一幢倾斜的巨_影_做梦],
+			[我没有空更没有酣睡的权利有一面灵魂还没有收起谁的旗子],
+			[~~I know *The* man across can never come back],
+			[~Let *Night* and Death on the border of dark],
+			[The last *Watchman* by the last lamp to prop a],
+			[穆旦李金发徐志摩郭沫若卞之琳*余光中*艾青_著_胡适_译_林徽因],
+			[#set text(cjk-latin-spacing: none)
+			CricketBeeMothButterfly#s[Lacewing]Fly_编_Ant_排_Wasp],
+			[意丹希瑞西马泰阿韩#g[中]日#g[英]印荷法德越俄葡挪芬匈捷保爱斯],
+			[本书仅用于个人学习研究或者交流不作商业用途非正文部分],
+			[仅代表编者非作者意见所载正文的相应权利均属于原权利人],
+		)
+	]
+]
+
+/*
 //SEC cover page
+#pagebreak()
+#show: c => set-zh(c)
 
 #grid(
 	rows: (2fr, 1fr),
@@ -150,6 +237,7 @@
 		]
 	],
 )
+*/
 
 //SEC disclaimer
 #set heading(outlined: false)
@@ -171,12 +259,13 @@
 )[
 	#block(
 		width: 6em,
-		height: 3em
+		height: 4em
 	)[
 		#set align(center)
 		#grid(
 			columns: (6em, 6em),
-			rows: (1fr, 1fr),
+			rows: (1fr, ) * 3,
+			[书本名], [*守夜人*],
 			[著译者], [*余光中*],
 			[编排者], [*Lacewing*]
 		)
@@ -231,16 +320,11 @@
 
 === 裙形态#note[（昵称）和] 棱镜#note[（昵称）]
 引我了解LaTex和Markdown，以及排版语言的世界。
-#grid(
-	columns: (1fr, 0.1fr, 1fr),
-	blockquote[我都用的Overleaf],
-	[],
-	blockquote[感觉不如 Marp]
-)
 
 === 夜谷紫幽#note[（昵称）]
 我排版与文档编写之旅上的同伴，相互答疑解惑。
-#blockquote[找到问题了，函数名只有一个字母时会当成字符]
+
+#pagebreak()
 
 #[
 	#set align(center+horizon)
@@ -740,7 +824,7 @@ Your past is west of the sunset, west of it.
 #show: c => set-zh(c)
 
 = 当我死时
-<when-i-am-dead>
+<h:when-i-am-dead>
 
 当我死时，葬我，在长江与黄河
 
@@ -774,7 +858,7 @@ Your past is west of the sunset, west of it.
 #show: c => set-en(c)
 
 = When I Am Dead
-<when-i-am-dead>
+<h:when-i-am-dead>
 
 When I am dead, lay me down between the Yangtze
 
@@ -1072,7 +1156,7 @@ Arise, winging and squawking from my mouth and eyes.
 		colspan: 3,
 		align(right)[
 			#note[
-				_自注：写成后，才发现这首《黑天使》是首尾相衔的联锁体，段与段之间不可能读断。Emily Dickinson 的 #emph-en[_I Like to See It Lap the Miles_] 近于此体。_
+				_自注：写成后，才发现这首《黑天使》是首尾相衔的联锁体，段与段之间不可能读断。Emily Dickinson 的 #e-en[_I Like to See It Lap the Miles_] 近于此体。_
 			]
 		]
 	),
