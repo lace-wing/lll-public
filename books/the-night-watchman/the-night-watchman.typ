@@ -18,7 +18,7 @@
 	day: 4
 )
 
-#let set-en(doc) = {
+#let set-en(body) = {
 	set text(lang: "en", size: 18pt)
 	set par(hanging-indent: 1em)
 	show par: set block(spacing: 0.74em)
@@ -26,9 +26,9 @@
 		font: "Baskerville",
 
 	)
-	doc
+	body
 }
-#let set-zh(doc) = {
+#let set-zh(body) = {
 	set text(lang: "zh", size: 18pt)
 	set par(hanging-indent: 0em)
 	show par: set block(spacing: 1em)
@@ -36,7 +36,7 @@
 		font: "Kaiti SC",
 		style: "normal"
 	)
-	doc
+	body
 }
 
 #let ld = h(2em)
@@ -116,7 +116,7 @@
 //SEC exp cover page
 #[
 	#set page(margin: -2em) // max 26 zh char
-	#show: c => set-zh(c)
+	#show: set-zh
 	#set text(
 		font: (
 			"MonaspiceRn NF",
@@ -147,9 +147,6 @@
 			align: center+horizon,
 			stroke: none,
 			gutter: -0pt,
-			// 26 zh char
-			// 45 en char
-			// [矗然钢的灵魂醒着严肃的静铿锵着西螺平原的海风猛撼着这],
 			[座意志之塔的每一根神经猛撼着而且绝望地啸着而铁钉的齿],
 			[紧紧咬着铁臂的手紧紧握着严肃的静于_是_我的灵魂也醒了我],
 			[知道既渡的我将异于未渡的_我我知道彼岸的我不能复_原为此],
@@ -194,7 +191,7 @@
 /*
 //SEC cover page
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 #grid(
 	rows: (2fr, 1fr),
@@ -205,7 +202,7 @@
 			#v(2em)
 			#set text(weight: "light", fill: black.lighten(33%))
 			有这么一个人：像我像他像你 \
-			#show: c => set-en(c)
+			#show: set-en
 			Such as myself and you and him.
 		],
 		[
@@ -223,7 +220,7 @@
 	),
 	[
 		#align(right)[
-			#show: c => set-en(c)
+			#show: set-en
 			#text(
 				size: 32pt,
 				font: "MonaspiceRn NF",
@@ -242,7 +239,7 @@
 //SEC disclaimer
 #set heading(outlined: false)
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 #set text(size: 14pt)
 
 = 免责声明
@@ -274,7 +271,7 @@
 
 //SEC editor's note
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 编者序语
 
@@ -297,7 +294,7 @@
 //SEC special thanks
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 #set text(size: 14pt)
 
 = #text(size: 1em * 1.5)[特别感谢]
@@ -342,7 +339,7 @@
 //SEC outline
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 #set heading(outlined: true)
 #outline(title: [目录])
 
@@ -350,7 +347,7 @@
 
 #pagebreak()
 #set page(numbering: "1")
-#show: c => set-zh(c)
+#show: set-zh
 
 = 西螺大桥
 <h:hsilo-bridge>
@@ -410,7 +407,7 @@
 )
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = Hsilo Bridge
 <h:hsilo-bridge>
@@ -474,7 +471,7 @@ And tall looms the massive silence,
 And awake is the soul of steel.
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 七层下
 <h:seven-layers-beneath>
@@ -558,7 +555,7 @@ And awake is the soul of steel.
 )
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = Seven Layers Beneath
 <h:seven-layers-beneath>
@@ -638,7 +635,7 @@ Your past is west of the sunset, west of it.
 #align(right)[— _Devil's Den, Gettysburg_]
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 钟乳岩
 <h:smoke-hole-cavern>
@@ -723,7 +720,7 @@ Your past is west of the sunset, west of it.
 )
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = Smoke Hole Cavern
 <h:smoke-hole-cavern>
@@ -821,7 +818,7 @@ Your past is west of the sunset, west of it.
 )
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 当我死时
 <h:when-i-am-dead>
@@ -855,7 +852,7 @@ Your past is west of the sunset, west of it.
 到多鹧鸪的重庆，代替回乡
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = When I Am Dead
 <h:when-i-am-dead>
@@ -903,7 +900,7 @@ From the mouth of Yangtze all the way up
 To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:tungting> and to Koko Nor #footnote[青海湖]<ft:koko-nor>
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 灰鸽子
 <h:gray-pigeons>
@@ -947,7 +944,7 @@ To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:
 含含糊糊在延续
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = Gray Pigeons
 <h:gray-pigeons>
@@ -993,7 +990,7 @@ Which seems to stammer and hesitate
 Off and on through the afternoon.
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 单人床
 <the-single-bed>
@@ -1031,7 +1028,7 @@ Off and on through the afternoon.
 自我的眼中，口中，#r[chuáng][幢]幢然飞起
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = The Single Bed
 <the-single-bed>
@@ -1073,7 +1070,7 @@ From which deformed crows, one uglier than the other,
 Arise, winging and squawking from my mouth and eyes.
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 黑天使
 <h:the-black-angel>
@@ -1163,7 +1160,7 @@ Arise, winging and squawking from my mouth and eyes.
 )
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = The Black Angel
 <h:the-black-angel>
@@ -1262,7 +1259,7 @@ Arise, winging and squawking from my mouth and eyes.
 )
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 有一只死鸟
 <h:there-was-a-dead-bird>
@@ -1326,7 +1323,7 @@ Arise, winging and squawking from my mouth and eyes.
 
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = There Was a Dead Bird
 <h:there-was-a-dead-bird>
@@ -1394,7 +1391,7 @@ The air never forgets a martyred breath.
 Or you can sing on in the teeth of death.
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 致读者
 <h:to-the-reader>
@@ -1410,7 +1407,7 @@ Or you can sing on in the teeth of death.
 有这么一个人：像我像他像你
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = To the Reader
 <h:to-the-reader>
@@ -1426,7 +1423,7 @@ When I say China I only mean
 Such as myself and you and him.
 
 #pagebreak()
-#show: c => set-zh(c)
+#show: set-zh
 
 = 双人床
 <h:the-double-bed>
@@ -1474,7 +1471,7 @@ Such as myself and you and him.
 卷入你四肢美丽的漩涡
 
 #pagebreak()
-#show: c => set-en(c)
+#show: set-en
 
 = The Double Bed
 <h:the-double-bed>
@@ -1522,3 +1519,8 @@ Launch the thousandth siege of eternity
 As we plunge whirling down, Heaven beneath,
 
 Into the maelstrom of your limbs.
+
+#parbreak()
+#show: set-zh
+
+
