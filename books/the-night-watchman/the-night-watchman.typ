@@ -1688,3 +1688,75 @@ Sky stupefied, earth stunned, and faint between your railings came
 Coughs of rotten lungs, moans of rotten eyes,
 
 Mothers sobbing, orphans wailing in unisons.
+
+#pagebreak()
+#show: set-zh
+
+= 九命猫
+<h:a-cat-with-nine-lives>
+
+我的敌人是夜，不是任一只鼠
+
+一种要染黑一切的企图
+
+企图噬尽所有的光
+
+被祟的空间，徐徐，十二响
+
+当古钟悚悚敲起
+
+敲响午夜的心脏，忽然有风
+
+宽大的僧袖拂脸过处
+
+星象叮叮当当全被扫落，像死亡
+
+一口气吹熄生日蛋糕的蜡烛
+
+但死亡不能将我全吹熄
+
+九条命，维持九盏灯
+
+一盏灯投九重影，照我
+
+读一部读不完的书
+
+黑暗是一部醒目的书
+
+从封面到封底，我独自读
+
+#pagebreak()
+#show: set-en
+
+= A Cat with Nine Lives
+<h:a-cat-with-nine-lives>
+
+My enemy is not any of the rats, but the whole night,
+
+An attempt to paint everything black
+
+And nibble at the one remaining light.
+
+In the haunted space, listen, twelve strokes
+
+The ancient bronze bell slowly strikes
+
+At the startled heart of midnight, when a sudden blast
+
+With the immensity of a monk's sleeve flaps my face
+
+And down come tinkling the stars, as Death
+
+Puffs out all the birthday-cake candles with one breath.
+
+But Death can't put me out all at once:
+
+My nine lives keep burning nine lamps,
+
+Each casting nine shadows. So I
+
+Am reading a book without an end.
+
+Darkness is an engaging book
+
+I purr alone, from cover to cover.
