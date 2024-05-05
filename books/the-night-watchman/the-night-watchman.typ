@@ -126,7 +126,7 @@
 
 #show footnote.entry: set text(size: 12pt)
 
-//SEC exp cover page
+//SEC UTF art cover page
 #[
 	#set page(margin: -2em) // max 26 zh char
 	#show: set-zh
@@ -290,6 +290,13 @@
 	]
 ]
 
+//SEC outline
+
+#pagebreak()
+#show: set-zh
+#set heading(outlined: true)
+#outline(title: [目录], depth: 1)
+
 //SEC editor's note
 #pagebreak()
 #show: set-zh
@@ -313,12 +320,12 @@
 #align(right)[Lacewing \ #ed-note-date.display()]
 
 //SEC special thanks
-
 #pagebreak()
 #show: set-zh
-#set text(size: 14pt)
 
-= #text(size: 1em * 1.5)[特别感谢]
+= 特别感谢
+
+#set text(size: 14pt)
 
 == 12公里#note[（原蓝天作文网）]
 我文学创作的起点。
@@ -356,13 +363,6 @@
 	== Typst
 	感谢Typst，你精巧的功能和热情的社区是我编排此书的动力和助力。
 ]
-
-//SEC outline
-
-#pagebreak()
-#show: set-zh
-#set heading(outlined: true)
-#outline(title: [目录])
 
 //SEC main body
 
@@ -1773,3 +1773,27 @@ Am reading a book without an end.
 Darkness is an engaging book
 
 I purr alone, from cover to cover.
+
+#pagebreak()
+#show: set-zh
+
+= 自塑
+<h:self-sculpture>
+
+#pagebreak()
+#show: set-en
+
+= Self-Sculpture
+<h:self-sculpture>
+
+#pagebreak()
+#show: set-zh
+
+= 狗尾草
+<h:green-bristlegrass>
+
+#pagebreak()
+#show: set-en
+
+= Green Bristlegrass
+<h:green-bristlegrass>
