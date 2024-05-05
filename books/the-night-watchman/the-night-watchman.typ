@@ -7,8 +7,8 @@
 )
 
 #let r = get-ruby(
-	size: 0.4em,
-	dy: 2pt,
+	size: 0.5em,
+	dy: 1.2pt,
 	alignment: "center"
 )
 
@@ -117,6 +117,9 @@
 #[
 	#set page(margin: -2em) // max 26 zh char
 	#show: set-zh
+	#let art-color = maroon.darken(20%)
+	#let name-color = red.darken(50%)
+	#let role-color = yellow.darken(55%)
 	#set text(
 		font: (
 			"MonaspiceRn NF",
@@ -126,19 +129,24 @@
 		fill: white.darken(15%),
 	)
 	#show emph: set text(
-		fill: yellow.darken(55%),
+		fill: name-color,
 		weight: "extralight",
-		stroke: yellow.darken(55%)+1.25pt
+		stroke: name-color+1.25pt,
+		font: (
+			"MonaspiceRn NF",
+			"Kaiti SC"
+		),
+		style: "oblique"
 	)
 	#show strong: set text(
-		fill: red.darken(50%),
+		fill: art-color,
 		weight: "extralight",
-		stroke: red.darken(50%)+1.25pt
+		stroke: art-color+1.25pt
 	)
-	#let g(body) = text(
-		fill: green.darken(60%),
+	#let p(body) = text(
+		fill: role-color,
 		weight: "extralight",
-		stroke: green.darken(60%)
+		stroke: role-color
 	)[#body]
 
 	#place(center+horizon)[
@@ -148,40 +156,40 @@
 			stroke: none,
 			gutter: -0pt,
 			[座意志之塔的每一根神经猛撼着而且绝望地啸着而铁钉的齿],
-			[紧紧咬着铁臂的手紧紧握着严肃的静于_是_我的灵魂也醒了我],
-			[知道既渡的我将异于未渡的_我我知道彼岸的我不能复_原为此],
-			[岸的我但命运自神秘的一点_伸_过来一千条欢迎的臂_我_必须渡],
-			[河太上无情古战场的浪子啊_你_没什么往事_没_有一星_星_新大陆],
-			[太新没有你的往事往事在落日以西唉以西_寂_寞是一张单人床],
-			[向成人说童话是白天使们的_职业我是头颅悬价的刺客_来自黑],
-			[帷以外或者你坚持在户外歌唱在零下的冬_季_当咳嗽成为流行],
-			[的语言而且安全一千个故事是一_个_故事那_主_题永远是一个主],
-			[题永远是一个羞耻和荣誉当我说中_国_时我_只_是说有这么一个],
-			[人像我像他像你五十_年_后你将在博物馆看_见_这尊黑凛凛的巨],
-			[兽吐完喉_中的敌意膛中的恨在火狱_和烟_网呼_痛和呼救之后搁],
-			[浅在历史无助_的_岸边在_半_世纪在半世纪之后而且不了解在半],
-			[世纪半世纪之_前_一分钟_的疯狂比_五十年更长我的敌人是夜不],
-			[是任一只鼠_在_我们这_时_代每一_枝_笔是一个例外每一枝避雷针],
-			[都相信敢于_应_战的_不_死于_战_争_我_希望这女孩的回忆比我的要],
-			[美丽传说_北方_有_一_首_民_歌只_有_黄河的肺活_量_能唱从青海到黄],
-			[海风也听见_沙_也听见那_海_棠_究_竟是外伤还_是_内伤再也分不清],
-			[全睡着了吧_下_面那世界连_雨_声也不再陪我_小_时候乡愁是一枚],
-			[小小的邮票_我_在这头母_亲_在_那_头茫然握着_听_筒断了一截断了],
-			[的脐带握着_要_拨哪_个号_码呢每_一粒_晴天_的_露_珠_每一粒阴天的],
-			[雨珠分手的日子每一粒牵挂在心头的念_珠_串_成_有始有终的这],
-			[一条项链只风吹星光颤不休剩我与永_恒_拔河黄_河_西来大江东],
-			[去此外五千年都已沉寂真的就是吗烛_啊_我问你_一_阵风过你轻],
-			[轻的摇头有意无意地像在说否无意_有_意地又像在_说_是怎么还],
-			[没有停啊从传说落到了现在从霏_霏_落到了湃湃从檐_漏_落到了],
-			[江海最后的*守夜人*守最后一盏_灯_只为撑一幢倾斜的巨_影_做梦],
+			[紧紧咬着铁臂的手紧紧握着严肃的静于*是*我的灵魂也醒了我],
+			[知道既渡的我将异于未渡的*我我知道彼岸的我不能复*原为此],
+			[岸的我但命运自神秘的一点*伸*过来一千条欢迎的臂*我*必须渡],
+			[河太上无情古战场的浪子啊*你*没什么往事*没*有一星*星*新大陆],
+			[太新没有你的往事往事在落日以西唉以西*寂*寞是一张单人床],
+			[向成人说童话是白天使们的*职业我是头颅悬价的刺客*来自黑],
+			[帷以外或者你坚持在户外歌唱在零下的冬*季*当咳嗽成为流行],
+			[的语言而且安全一千个故事是一*个*故事那*主*题永远是一个主],
+			[题永远是一个羞耻和荣誉当我说中*国*时我*只*是说有这么一个],
+			[人像我像他像你五十*年*后你将在博物馆看*见*这尊黑凛凛的巨],
+			[兽吐完喉*中的敌意膛中的恨在火狱*和烟*网呼*痛和呼救之后搁],
+			[浅在历史无助*的*岸边在*半*世纪在半世纪之后而且不了解在半],
+			[世纪半世纪之*前*一分钟*的疯狂比*五十年更长我的敌人是夜不],
+			[是任一只鼠*在*我们这*时*代每一*枝*笔是一个例外每一枝避雷针],
+			[都相信敢于*应*战的*不*死于*战*争*我*希望这女孩的回忆比我的要],
+			[美丽传说*北方*有*一*首*民*歌只*有*黄河的肺活*量*能唱从青海到黄],
+			[海风也听见*沙*也听见那*海*棠*究*竟是外伤还*是*内伤再也分不清],
+			[全睡着了吧*下*面那世界连*雨*声也不再陪我*小*时候乡愁是一枚],
+			[小小的邮票*我*在这头母*亲*在*那*头茫然握着*听*筒断了一截断了],
+			[的脐带握着*要*拨哪*个号*码呢每*一粒*晴天*的*露*珠*每一粒阴天的],
+			[雨珠分手的日子每一粒牵挂在心头的念*珠*串*成*有始有终的这],
+			[一条项链只风吹星光颤不休剩我与永*恒*拔河黄*河*西来大江东],
+			[去此外五千年都已沉寂真的就是吗烛*啊*我问你*一*阵风过你轻],
+			[轻的摇头有意无意地像在说否无意*有*意地又像在*说*是怎么还],
+			[没有停啊从传说落到了现在从霏*霏*落到了湃湃从檐*漏*落到了],
+			[江海最后的_守夜人_守最后一盏*灯*只为撑一幢倾斜的巨*影*做梦],
 			[我没有空更没有酣睡的权利有一面灵魂还没有收起谁的旗子],
-			[~~I know *The* man across can never come back],
-			[~Let *Night* and Death on the border of dark],
-			[The last *Watchman* by the last lamp to prop a],
-			[穆旦李金发徐志摩郭沫若卞之琳*余光中*艾青_著_胡适_译_林徽因],
+			[~~I know _The_ man across can never come back],
+			[~Let _Night_ and Death on the border of dark],
+			[The last _Watchman_ by the last lamp to prop a],
+			[穆旦李金发徐志摩郭沫若卞之琳_余光中_艾青#p[著]胡适#p[译]林徽因],
 			[#set text(cjk-latin-spacing: none)
-			CricketBeeMothButterfly#s[Lacewing]Fly_编_Ant_排_Wasp],
-			[意丹希瑞西马泰阿韩#g[中]日#g[英]印荷法德越俄葡挪芬匈捷保爱斯],
+			CricketBeeMothButterfly#emph[Lacewing]Fly#p[编]Ant#p[排]Wasp],
+			[意丹希瑞西马泰阿韩#p[中]日#p[英]印荷法德越俄葡挪芬匈捷保爱斯],
 			[本书仅用于个人学习研究或者交流不作商业用途非正文部分],
 			[仅代表编者非作者意见所载正文的相应权利均属于原权利人],
 		)
@@ -993,7 +1001,7 @@ Off and on through the afternoon.
 #show: set-zh
 
 = 单人床
-<the-single-bed>
+<h:the-single-bed>
 
 月是盲人的一只眼睛
 
@@ -1031,7 +1039,7 @@ Off and on through the afternoon.
 #show: set-en
 
 = The Single Bed
-<the-single-bed>
+<h:the-single-bed>
 
 The moon is a blind man's eye that glowers
 
@@ -1520,7 +1528,163 @@ As we plunge whirling down, Heaven beneath,
 
 Into the maelstrom of your limbs.
 
-#parbreak()
+#pagebreak()
 #show: set-zh
 
+= 野炮
+<h:the-field-gun>
 
+#set text(size: 15pt)
+
+#grid(
+	columns: (1.09fr, 0.06fr, 1fr),
+	[
+		五十年后，你将在博物馆看见
+
+		这尊黑凛凛的巨兽
+
+		吐完喉中的敌意，膛中的恨
+
+		在火狱和烟网，呼痛和呼救之后
+
+		搁浅在历史无助的岸边
+
+		不可解的一具尸骸，曾是恐龙
+
+		几分可骇，和更多的可笑，可悯
+
+		五十年后，你将在国立公园里看见
+
+		这重吨的黑魅，灵魂涤尽骄蛮
+
+		一个退休的屠夫，再度恢复
+
+		古金属的好脾气和纯朴
+
+		斑斓剥落的慈爱，冷静如僧
+
+		五十年后，他将柔驯地蹲伏
+
+		在健忘的草地上，任鸽群
+
+		任无知的鸽群在四周沉吟
+
+		任孩子们合唱，骑在炮管上，幻想
+
+		胯下是长颈鹿，是王子的白马
+
+		任年轻的母亲以他为背景
+
+		在橄榄树下准备野餐
+
+		而且微笑，向快门与镜头 @ft:no-par-sep
+	],
+	[],
+	[
+		在半世纪，在半世纪之后
+
+		而且不了解，在半世纪，在半世纪之前
+
+		一分钟的疯狂比五十年更长
+
+		当暴怒的巨灵啊你的铁臂举起
+
+		众神掩面，天使垂泪
+
+		也不可劝解，一寸，也不可挽回
+
+		铁臂举起，成一个亵渎的斜度
+
+		长膛正热，毒咒在膛中沸滚
+
+		你的斥骂洪亮一如真理
+
+		浓烟中，春泥飞溅如雨
+
+		你大声呵斥，掀起草皮
+
+		天痴，地#r[ǎi][騃] #footnote[假借为“佁”]<ft:rare-horse-ai>，你大声喝止
+
+		烂肺的呛咳，烂眼的呻吟
+
+		母亲的低泣，孤儿合唱队的啼声
+	]
+)
+
+#pagebreak()
+#show: set-en
+
+= The Field Gun
+<h:the-field-gun>
+
+#set text(size: 13pt)
+
+After fifty years in a museum you shall see
+
+This bullying black beast,
+
+Done with the curse in his throat, malice in his breast,
+
+And stranded, after the infernal fire and smoke,
+
+The involuntary yelps for help and pain,
+
+Full on history's helpless shore,
+
+A body, unintelligible, of a dinosaur,
+
+Calling more for wonder and pity than for dread.
+
+After fifty years you'll see him in a national park,
+
+A dark massive monster, cleansed of soul's arrogance,
+
+A retired butcher who has long regained
+
+The good humor and unobtrusiveness of old bronze,
+
+Quiet as a monk now in his kindly rustiness.
+
+After fifty years he'll demurely squat
+
+There on the forgetful lawn with the doves,
+
+The unmindful doves cooing in the neighborhood
+
+And festive children astride the barrel imagining
+
+They're riding a giraffe or the steed of a prince.
+
+So young mothers trustingly will lean on him
+
+And prepare their picnics under some olive tree,
+
+Smiling at the camera the unsuspicious smile,
+
+After fifty years, yes, after fifty years,
+
+And never imagine that only fifty years ago
+
+A moment's madness dragged longer than all the centuries,
+
+When with raving monstrosity his lurid arm was raised
+
+In the face of gods and all the tearful angels,
+
+Not an inch to relent or to be dissuaded,
+
+When the savage arm was raised to a blaspheming slant,
+
+Mouth-belching, the curse about to burst.
+
+Your profanity blasted no less than truth,
+
+Amidst the smothering smoke spring mun splashed like rain,
+
+Your flashing lectures turned up acres of turf,
+
+Sky stupefied, earth stunned, and faint between your railings came
+
+Coughs of rotten lungs, moans of rotten eyes,
+
+Mothers sobbing, orphans wailing in unisons.
