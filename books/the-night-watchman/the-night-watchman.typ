@@ -1780,11 +1780,125 @@ I purr alone, from cover to cover.
 = 自塑
 <h:self-sculpture>
 
+#grid(
+	columns: (1.1fr, 0.1fr, 1.1fr),
+	[
+		如何你立在旋风的中心
+
+		看疯狂的中国在风中疾转
+
+		须发飞扬，指着气候的方向
+
+		以一种痛楚的冷静
+
+		时间是风，能吹人年轻
+
+		能吹人年老，将须发吹掉
+
+		如何在旋风的中心，你立着
+
+		立成一座独立的塑像
+
+		在不为诗人塑像的国度
+
+		像座，是一部坚厚的书
+
+		一部分量够重的灵感
+
+		不随旋风的旋转而旋转
+
+		如何你在无坐标的空间
+
+		因立得够久成一个定点 @ft:no-par-sep
+	],[],
+	[
+		如何，因为你立得够久
+
+		让风一件件吹走衣冠
+
+		让风将一切的装饰吹走
+
+		但你仍丰满，仍不够瘦
+
+		如何让中国像疯狂的石匠
+
+		奋锤敲凿你切身的痛楚
+
+		敲落虚荣，敲落怯懦
+
+		敲落一鳞鳞多余的肌肤
+
+		露出瘦瘦的灵魂和净骨
+
+		被旋风磨成一架珊瑚。如何
+
+		中国将你毁坏，亦将你完成
+
+		像一个苍老，愤怒的石匠
+	]
+)
+
 #pagebreak()
 #show: set-en
 
 = Self-Sculpture
 <h:self-sculpture>
+
+#set text(size: 17pt)
+
+How you stand out amidst the whirlwind
+
+And see how madly China whirls around,
+
+Your hair blown where the weather blows
+
+And where the weathercock crows,
+
+With an agonized soberness.
+
+Time is the wind that blows you young
+
+And blows you old and blows off your brows and hair.
+
+How amidst the whirlwind you stand there,
+
+Defiant, a statue of independence,
+
+In a nation that builds no statue for poets:
+
+The pedestal, a massive enough book,
+
+An inspiration that never has shook
+
+Or turned when the whirlwind turned.
+
+How you'd become, in the windy void,
+
+A fixed point because long have you stood.
+
+How, because long have you withstood,
+
+Your garments, one by one, are blown away
+
+And blown everything that adorns,
+
+But that comely gauntness is yet to come.
+
+How you'd let China, a stone-cutter gone mad,
+
+Wildly hammer at your agonies,
+
+At all the vanities and cowardliness
+
+Till flake after flake your flesh goes
+
+And through the skeleton your soul glows:
+
+A craggy coral sculptured by the wind.
+
+How China, an aged but ruthless sculptor.
+
+Chops you down into shape.
 
 #pagebreak()
 #show: set-zh
