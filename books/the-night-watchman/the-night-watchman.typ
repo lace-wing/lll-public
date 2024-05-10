@@ -1906,8 +1906,94 @@ Chops you down into shape.
 = 狗尾草
 <h:green-bristlegrass>
 
+总之最后谁也辩不过坟墓
+
+死亡，是惟一的永久地址
+
+譬如吊客散后，殡仪馆的后门
+
+朝南，又怎样？
+
+朝北，又怎样？
+
+那柩车总显出要远行的样子
+
+总之谁也拗不过这桩事情
+
+至于不朽云云
+
+或者仅仅是一种暗语，为了夜行
+
+灵，或者不灵，相信，或者不相信
+
+最后呢谁也不比狗尾草更高
+
+除非名字上升，向星象去看齐
+
+去参加里尔克或者李白
+
+#h(10em) 此外
+
+一切都留在草下
+
+名字归名字，#r[dú][髑]髅归髑髅
+
+星归星，蚯蚓归蚯蚓
+
+夜空下，如果有谁呼唤
+
+上面，有一种光
+
+下面，有一只蟋蟀
+
+隐隐像要回答
+
 #pagebreak()
 #show: set-en
 
 = Green Bristlegrass
 <h:green-bristlegrass>
+
+Who, after all, can argue with the grave
+
+When death is the only permanent address?
+
+When all the condolers have left,
+
+What if the undertaker's back door
+
+Faces the south or the north?
+
+The coach looks always ready for exile,
+
+And none can dissuade it from the trip.
+
+The so-called immortality
+
+May prove nothing but an empty password
+
+For whoever must travel at night,
+
+Even if it works and convinces.
+
+None ends up taller than the bristlegrass
+
+Unless his name soars to the stars
+
+To join Li Po #footnote[李白（旧英音）]<ft:li-po> or Rilke #footnote[莱纳·玛利亚·里尔克，诗人]<ft:rilke>
+
+#h(9em) while the rest
+
+Is left behind beneath the grass.
+
+Keep names to names, dust to dust,
+
+Stars to stars, earthworms to earthworms.
+
+If a voice calls under the night sky,
+
+Who, indeed, is going to answer
+
+Except a glimmer from above
+
+Or a cricket from below?
