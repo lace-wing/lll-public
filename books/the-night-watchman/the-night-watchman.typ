@@ -1906,6 +1906,8 @@ Chops you down into shape.
 = 狗尾草
 <h:green-bristlegrass>
 
+#set text(size: 17pt)
+
 总之最后谁也辩不过坟墓
 
 死亡，是惟一的永久地址
@@ -1930,7 +1932,7 @@ Chops you down into shape.
 
 除非名字上升，向星象去看齐
 
-去参加里尔克或者李白
+去参加里尔克#footnote[莱纳·玛利亚·里尔克，诗人]<ft:rilke>或者李白
 
 #h(10em) 此外
 
@@ -1980,7 +1982,7 @@ None ends up taller than the bristlegrass
 
 Unless his name soars to the stars
 
-To join Li Po #footnote[李白（旧英音）]<ft:li-po> or Rilke #footnote[莱纳·玛利亚·里尔克，诗人]<ft:rilke>
+To join Li Po #footnote[李白（旧英音）]<ft:li-po> or Rilke
 
 #h(9em) while the rest
 
