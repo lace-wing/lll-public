@@ -1999,3 +1999,133 @@ Who, indeed, is going to answer
 Except a glimmer from above
 
 Or a cricket from below?
+
+#pagebreak()
+#show: set-zh
+
+= 如果远方有战争
+<h:if-theres-a-war-raging-afar>
+
+#set text(size: 16pt)
+
+#grid(
+	columns: (1.1fr, 0.08fr, 1fr),
+	[
+		如果远方有战争，我应该掩耳
+
+		或是该坐起来，惭愧地倾听？
+
+		应该掩鼻，或应该深呼吸
+
+		难闻的焦味？#hg 我的耳朵应该
+
+		听你喘息着爱情或是听榴弹
+
+		宣扬真理？#hg 格言，勋章，补给
+
+		能不能喂饱无餍的死亡？
+
+		如果有战争煎一个民族，在远方
+
+		有战车狠狠地犁过春泥
+
+		有婴孩在号啕，向母亲的尸体
+
+		号啕一个盲哑的明天
+
+		如果有尼姑在火葬自己
+
+		寡欲的脂肪炙响绝望
+
+		烧曲的四肢抱住涅槃
+
+		为了一种无效的手势。#hg 如果
+
+		我们在床上，他们在战场
+
+		在铁丝网上播种着和平
+
+		我应该惶恐，或是该庆幸
+
+		庆幸是做爱，不是肉搏
+
+		是你的裸体在怀里，不是敌人 @ft:no-par-sep
+	], [],
+	[
+		如果远方有战争，\ 而我们在远方
+
+		你是慈悲的天使，白羽无疵
+
+		你俯身在病床，看我在床上
+
+		缺手，缺脚，缺眼，缺乏性别
+
+		在一所血腥的战地医院
+
+		如果远方有战争啊这样的战争
+
+		情人，如果我们在远方
+	]
+)
+
+#pagebreak()
+#show: set-en
+
+= If There's a War Raging Afar
+<h:if-theres-a-war-raging-afar>
+
+#set text(size: 17pt)
+
+If there's a war raging afar, shall I stop my ear
+
+Or shall I sit up and listen in shame?
+
+Shall I stop my nose or breathe and breathe
+
+The smothering smoke of troubled air? #hg Shall I hear
+
+You gasp lust and love or shall I hear the howitzers
+
+Howl their sermons of truth? #hg Mottoes, medals, widows,
+
+Can these glut the greedy palate of Death?
+
+If far away a war is frying a nation,
+
+And fleets of tanks are ploughing plots in spring,
+
+A child is crying at its mother's corpse
+
+Of a dumb and blind and deaf tomorrow;
+
+If a nun is squatting on her fiery bier
+
+With famished flesh singeing a despair
+
+And black limbs ecstatic round Nirvana
+
+As a hopeless gesture of hope. #hg If
+
+We are in bed, and they're in the field
+
+Sowing peace in acres of barbed wire,
+
+Shall I feel guilty or shall I feel glad,
+
+Glad I'm making, not war, but love,
+
+And in my arms writhes your nakedness, not the foe's?
+
+If afar there rages a war, and there we are —
+
+You a merciful angel, clad all in white
+
+And bent over the bed, with me in bed —
+
+Without hand or foot or eye or without sex
+
+In a field hospital that smells of blood.
+
+If a war O such a war is raging afar,
+
+My love, if right there we are.
