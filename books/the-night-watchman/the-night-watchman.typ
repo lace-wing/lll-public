@@ -297,6 +297,8 @@
 #set heading(outlined: true)
 #outline(title: [目录], depth: 1)
 
+//TODO separate entries by sections (h1)
+
 //SEC editor's note
 #pagebreak()
 #show: set-zh
@@ -366,11 +368,13 @@
 
 //SEC main body
 
+//TODO compare ed 1992 with ed 2018, compile into a complete version
+
 #pagebreak()
 #set page(numbering: "1")
 #show: set-zh
 
-= 西螺大桥
+== 西螺大桥
 <h:hsilo-bridge>
 
 #grid(
@@ -430,7 +434,7 @@
 #pagebreak()
 #show: set-en
 
-= Hsilo Bridge
+== Hsilo Bridge
 <h:hsilo-bridge>
 
 #set text(size: 17pt)
@@ -494,7 +498,7 @@ And awake is the soul of steel.
 #pagebreak()
 #show: set-zh
 
-= 七层下
+== 七层下
 <h:seven-layers-beneath>
 
 #set text(size: 16pt)
@@ -578,7 +582,7 @@ And awake is the soul of steel.
 #pagebreak()
 #show: set-en
 
-= Seven Layers Beneath
+== Seven Layers Beneath
 <h:seven-layers-beneath>
 
 #set text(size: 14pt)
@@ -658,7 +662,7 @@ Your past is west of the sunset, west of it.
 #pagebreak()
 #show: set-zh
 
-= 钟乳岩
+== 钟乳岩
 <h:smoke-hole-cavern>
 
 #grid(
@@ -743,7 +747,7 @@ Your past is west of the sunset, west of it.
 #pagebreak()
 #show: set-en
 
-= Smoke Hole Cavern
+== Smoke Hole Cavern
 <h:smoke-hole-cavern>
 
 #set text(size: 15pt)
@@ -841,7 +845,7 @@ Your past is west of the sunset, west of it.
 #pagebreak()
 #show: set-zh
 
-= 当我死时
+== 当我死时
 <h:when-i-am-dead>
 
 当我死时，葬我，在长江与黄河
@@ -875,7 +879,7 @@ Your past is west of the sunset, west of it.
 #pagebreak()
 #show: set-en
 
-= When I Am Dead
+== When I Am Dead
 <h:when-i-am-dead>
 
 When I am dead, lay me down between the Yangtze
@@ -923,7 +927,7 @@ To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:
 #pagebreak()
 #show: set-zh
 
-= 灰鸽子
+== 灰鸽子
 <h:gray-pigeons>
 
 废炮怔怔地望着远方
@@ -967,7 +971,7 @@ To Poyang #footnote[鄱阳湖]<ft:poyang> and Tungt'ing #footnote[洞庭湖]<ft:
 #pagebreak()
 #show: set-en
 
-= Gray Pigeons
+== Gray Pigeons
 <h:gray-pigeons>
 
 The old guns muse and look afar.
@@ -1013,7 +1017,7 @@ Off and on through the afternoon.
 #pagebreak()
 #show: set-zh
 
-= 单人床
+== 单人床
 <h:the-single-bed>
 
 月是盲人的一只眼睛
@@ -1051,7 +1055,7 @@ Off and on through the afternoon.
 #pagebreak()
 #show: set-en
 
-= The Single Bed
+== The Single Bed
 <h:the-single-bed>
 
 The moon is a blind man's eye that glowers
@@ -1093,7 +1097,7 @@ Arise, winging and squawking from my mouth and eyes.
 #pagebreak()
 #show: set-zh
 
-= 黑天使
+== 黑天使
 <h:the-black-angel>
 
 #set text(size: 16pt)
@@ -1183,7 +1187,7 @@ Arise, winging and squawking from my mouth and eyes.
 #pagebreak()
 #show: set-en
 
-= The Black Angel
+== The Black Angel
 <h:the-black-angel>
 
 #set text(size: 14pt)
@@ -1282,7 +1286,7 @@ Arise, winging and squawking from my mouth and eyes.
 #pagebreak()
 #show: set-zh
 
-= 有一只死鸟
+== 有一只死鸟
 <h:there-was-a-dead-bird>
 
 #grid(
@@ -1346,7 +1350,7 @@ Arise, winging and squawking from my mouth and eyes.
 #pagebreak()
 #show: set-en
 
-= There Was a Dead Bird
+== There Was a Dead Bird
 <h:there-was-a-dead-bird>
 
 #set text(size: 15pt)
@@ -1414,7 +1418,7 @@ Or you can sing on in the teeth of death.
 #pagebreak()
 #show: set-zh
 
-= 致读者
+== 致读者
 <h:to-the-reader>
 
 一千个故事是一个故事
@@ -1430,7 +1434,7 @@ Or you can sing on in the teeth of death.
 #pagebreak()
 #show: set-en
 
-= To the Reader
+== To the Reader
 <h:to-the-reader>
 
 A thousand stories make one story;
@@ -1446,7 +1450,7 @@ Such as myself and you and him.
 #pagebreak()
 #show: set-zh
 
-= 双人床
+== 双人床
 <h:the-double-bed>
 
 让战争在双人床外进行
@@ -1494,7 +1498,7 @@ Such as myself and you and him.
 #pagebreak()
 #show: set-en
 
-= The Double Bed
+== The Double Bed
 <h:the-double-bed>
 
 Let war rage on beyond the double bed
@@ -1544,7 +1548,7 @@ Into the maelstrom of your limbs.
 #pagebreak()
 #show: set-zh
 
-= 野炮
+== 野炮
 <h:the-field-gun>
 
 #set text(size: 15pt)
@@ -1627,7 +1631,7 @@ Into the maelstrom of your limbs.
 #pagebreak()
 #show: set-en
 
-= The Field Gun
+== The Field Gun
 <h:the-field-gun>
 
 #set text(size: 13pt)
@@ -1705,7 +1709,7 @@ Mothers sobbing, orphans wailing in unisons.
 #pagebreak()
 #show: set-zh
 
-= 九命猫
+== 九命猫
 <h:a-cat-with-nine-lives>
 
 我的敌人是夜，不是任一只鼠
@@ -1741,7 +1745,7 @@ Mothers sobbing, orphans wailing in unisons.
 #pagebreak()
 #show: set-en
 
-= A Cat with Nine Lives
+== A Cat with Nine Lives
 <h:a-cat-with-nine-lives>
 
 My enemy is not any of the rats, but the whole night,
@@ -1777,7 +1781,7 @@ I purr alone, from cover to cover.
 #pagebreak()
 #show: set-zh
 
-= 自塑
+== 自塑
 <h:self-sculpture>
 
 #grid(
@@ -1841,7 +1845,7 @@ I purr alone, from cover to cover.
 #pagebreak()
 #show: set-en
 
-= Self-Sculpture
+== Self-Sculpture
 <h:self-sculpture>
 
 #set text(size: 17pt)
@@ -1903,7 +1907,7 @@ Chops you down into shape.
 #pagebreak()
 #show: set-zh
 
-= 狗尾草
+== 狗尾草
 <h:green-bristlegrass>
 
 #set text(size: 17pt)
@@ -1953,7 +1957,7 @@ Chops you down into shape.
 #pagebreak()
 #show: set-en
 
-= Green Bristlegrass
+== Green Bristlegrass
 <h:green-bristlegrass>
 
 Who, after all, can argue with the grave
@@ -2003,7 +2007,7 @@ Or a cricket from below?
 #pagebreak()
 #show: set-zh
 
-= 如果远方有战争
+== 如果远方有战争
 <h:if-theres-a-war-raging-afar>
 
 #set text(size: 16pt)
@@ -2071,7 +2075,7 @@ Or a cricket from below?
 #pagebreak()
 #show: set-en
 
-= If There's a War Raging Afar
+== If There's a War Raging Afar
 <h:if-theres-a-war-raging-afar>
 
 #set text(size: 17pt)
@@ -2129,3 +2133,70 @@ In a field hospital that smells of blood.
 If a war O such a war is raging afar,
 
 My love, if right there we are.
+
+// skipped a lot
+#pagebreak()
+#show: set-en
+
+== In Praise of Hong Kong
+<h:in-praise-of-hong-kong>
+
+#set text(size: 16pt)
+
+Just as that brave young man,
+
+The noblest and most favored
+
+Of all the children
+
+Of Goddess of Democracy,
+
+By the unbending of his spine
+
+And the openness of his breast
+
+Stopped the stamping tanks,
+
+A whole clattering fleet of them,
+
+And truned them all at once
+
+Into confounded crabs
+
+On the fatal street of June,
+
+\
+
+You are such a hero
+
+To stand all by yourself
+
+And face bigger tanks
+
+Clanking with heavier treads,
+
+Louder in your protest,
+
+And, while the world watches by
+
+Single-handed you resist,
+
+Crushing down upon you,
+
+The tank fleet of the years:
+
+#ld 1990,
+
+#ld 1991,
+
+#ld 1992,
+
+#ld 1993,
+
+#ld 1994……
+
+#ld until at last
+
+#ld comes all too fast
+
+#ld 1997.
