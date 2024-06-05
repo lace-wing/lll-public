@@ -6,3 +6,5 @@
 [Ll]ocal*/
 [Ll]ocal*
 
+# PDF
+*.pdf
