@@ -2159,7 +2159,7 @@ Stopped the stamping tanks,
 
 A whole clattering fleet of them,
 
-And truned them all at once
+And turned them all at once
 
 Into confounded crabs
 
