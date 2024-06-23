@@ -370,6 +370,9 @@
 
 //TODO compare ed 1992 with ed 2018, compile into a complete version
 
+//TEMP blank page for 2-page PDF reading
+#pagebreak()
+
 #pagebreak()
 #set page(numbering: "1")
 #show: set-zh
