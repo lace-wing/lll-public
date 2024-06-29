@@ -1,0 +1,10 @@
+:root {
+	font-family: Times New Roman;
+}
+[style*=--mo] {
+	contain: layout;
+	view-transition-name: var(--mo);
+}
+header, footer {
+	text-align: center;
+}
